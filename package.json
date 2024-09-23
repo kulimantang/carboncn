@@ -5,8 +5,8 @@
   "license": "MIT",
   "type": "module",
   "author": {
-    "name": "shadcn",
-    "url": "https://twitter.com/shadcn"
+    "name": "carboncn",
+    "url": "https://github.com/Kulimantang"
   },
   "workspaces": [
     "apps/*",
@@ -38,8 +38,8 @@
     "sync:templates": "./scripts/sync-templates.sh \"templates/*\"",
     "check": "turbo lint typecheck format:check",
     "release": "changeset version",
-    "pub:beta": "cd packages/shadcn && pnpm pub:beta",
-    "pub:release": "cd packages/shadcn && pnpm pub:release",
+    "pub:beta": "cd packages/carboncn && pnpm pub:beta",
+    "pub:release": "cd packages/carboncn && pnpm pub:release",
     "test": "turbo run test --force"
   },
   "packageManager": "pnpm@9.0.6",
