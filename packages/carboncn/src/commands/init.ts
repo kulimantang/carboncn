@@ -248,7 +248,7 @@ async function promptForConfig(defaultConfig: Config | null = null) {
   ])
 
   return rawConfigSchema.parse({
-    $schema: "https://ui.shadcn.com/schema.json",
+    $schema: "https://carboncn.vercel.app/schema.json",
     style: options.style,
     tailwind: {
       config: options.tailwindConfig,

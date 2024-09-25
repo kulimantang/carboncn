@@ -9,7 +9,7 @@ import {
 } from "../../../src/utils/updaters/update-tailwind-config"
 
 const SHARED_CONFIG = {
-  $schema: "https://ui.shadcn.com/schema.json",
+  $schema: "https://carboncn.vercel.app/schema.json",
   style: "new-york",
   rsc: true,
   tsx: true,

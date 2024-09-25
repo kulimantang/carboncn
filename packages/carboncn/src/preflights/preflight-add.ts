@@ -52,7 +52,7 @@ export async function preFlightAdd(options: z.infer<typeof addOptionsSchema>) {
     )
     logger.error(
       `Learn more at ${highlighter.info(
-        "https://ui.shadcn.com/docs/components-json"
+        "https://carboncn.vercel.app/docs/components-json"
       )}.`
     )
     logger.break()
