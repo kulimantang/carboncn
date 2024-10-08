@@ -98,10 +98,10 @@ export function ComponentPreview({
           )}
         </div>
         <TabsContent value="preview" className="relative rounded-md border">
-          <div className="flex items-center justify-between p-4">
-            <StyleSwitcher />
+          <div className="flex items-center justify-end p-4">
+            {/* <StyleSwitcher /> */}
             <div className="flex items-center gap-2">
-              {config.style === "default" && description ? (
+              {/* {config.style === "default" && description ? (
                 <V0Button
                   block={{
                     code: codeString,
@@ -110,7 +110,7 @@ export function ComponentPreview({
                     description,
                   }}
                 />
-              ) : null}
+              ) : null} */}
               <CopyButton
                 value={codeString}
                 variant="outline"

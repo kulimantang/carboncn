@@ -8,7 +8,7 @@ import { trackEvent } from "@/lib/events"
 import { cn } from "@/lib/utils"
 import { useLiftMode } from "@/hooks/use-lift-mode"
 import { BlockCopyButton } from "@/components/block-copy-button"
-import { StyleSwitcher } from "@/components/style-switcher"
+// import { StyleSwitcher } from "@/components/style-switcher"
 import { V0Button } from "@/components/v0-button"
 import { Badge } from "@/registry/new-york/ui/badge"
 import { Label } from "@/registry/new-york/ui/label"
@@ -55,10 +55,10 @@ export function BlockToolbar({
           </TabsTrigger>
         </TabsList>
         <Separator orientation="vertical" className="mx-2 hidden h-4 md:flex" />
-        <StyleSwitcher
+        {/* <StyleSwitcher
           className="h-[calc(theme(spacing.7)_-_1px)] dark:h-7"
           disabled={isLiftMode}
-        />
+        /> */}
         <Popover>
           <PopoverTrigger
             disabled={isLiftMode}

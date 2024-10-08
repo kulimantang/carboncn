@@ -85,8 +85,11 @@ function updateBaseLayerPlugin() {
     postcssPlugin: "update-base-layer",
     Once(root: Root) {
       const requiredRules = [
-        { selector: "*", apply: "border-border" },
-        { selector: "body", apply: "bg-background text-foreground" },
+        // { selector: "*", apply: "border-border" },
+        { selector: "*", apply: "border-border-subtle" },
+        // { selector: "body", apply: "bg-background text-foreground" },
+        { selector: "body", apply: "bg-background text-text-primary" },
+        { selector: "html", apply: "font-sans" },
       ]
 
       let baseLayer = root.nodes.find(
@@ -281,12 +284,26 @@ function addOrUpdateVars(
   }
 
   Object.entries(vars).forEach(([key, value]) => {
-    const prop = `--${key.replace(/^--/, "")}`
-    const newDecl = postcss.decl({
-      prop,
-      value,
-      raws: { semicolon: true },
-    })
+    let prop: string
+    let newDecl: postcss.Declaration
+
+    // Special handling for background-color and color
+    if (key === "background-color" || key === "color") {
+      prop = key
+      newDecl = postcss.decl({
+        prop,
+        value,
+        raws: { semicolon: true },
+      })
+    } else {
+      // For all other properties, create CSS custom properties
+      prop = `--${key.replace(/^--/, "")}`
+      newDecl = postcss.decl({
+        prop,
+        value,
+        raws: { semicolon: true },
+      })
+    }
 
     const existingDecl = ruleNode?.nodes.find(
       (node): node is postcss.Declaration =>

@@ -14,7 +14,7 @@ const buttonVariants = cva(
         destructive:
           "bg-button-danger border-button-danger text-text-on-color hover:bg-button-danger-hover active:bg-button-danger-active hover:border-button-danger-hover",
         "danger--tertiary":
-          "bg-background text-button-danger-secondary hover:text-text-on-color border-button-danger-secondary hover:bg-button-danger-hover active:bg-button-danger-active hover:border-button-danger hover:border-button-danger-hover focus:hover:border-button-danger-hover",
+          "bg-background text-button-danger-secondary hover:text-text-on-color border-button-danger-secondary hover:bg-button-danger-hover active:bg-button-danger-active hover:border-button-danger-hover focus:hover:border-button-danger-hover focus:bg-button-danger focus:text-text-on-color",
         outline:
           "bg-transparent border-button-tertiary text-button-tertiary hover:bg-button-tertiary-hover hover:border-button-tertiary-hover active:bg-button-tertiary-active hover:text-text-inverse focus:text-text-inverse focus:bg-button-tertiary",
         secondary:

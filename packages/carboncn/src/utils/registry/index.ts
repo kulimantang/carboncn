@@ -17,6 +17,12 @@ import { HttpsProxyAgent } from "https-proxy-agent"
 import fetch from "node-fetch"
 import { z } from "zod"
 
+import {
+  CARBON_CSS_VARS_DARK,
+  CARBON_CSS_VARS_LIGHT,
+  CARBON_TAILWIND_COLORS,
+} from "../templates"
+
 const REGISTRY_URL = process.env.REGISTRY_URL ?? "https://carboncn.vercel.app/r"
 
 const agent = process.env.https_proxy
@@ -365,6 +371,14 @@ export async function registryGetTheme(name: string, config: Config) {
               md: "calc(var(--radius) - 2px)",
               sm: "calc(var(--radius) - 4px)",
             },
+            fontFamily: {
+              sans: [
+                "IBM Plex Sans",
+                "system-ui",
+                "ui-sans-serif",
+                "sans-serif",
+              ],
+            },
             colors: {},
           },
         },
@@ -381,15 +395,18 @@ export async function registryGetTheme(name: string, config: Config) {
   if (config.tailwind.cssVariables) {
     theme.tailwind.config.theme.extend.colors = {
       ...theme.tailwind.config.theme.extend.colors,
-      ...buildTailwindThemeColorsFromCssVars(baseColor.cssVars.dark),
+      ...CARBON_TAILWIND_COLORS,
+      // ...buildTailwindThemeColorsFromCssVars(baseColor.cssVars.dark),
     }
     theme.cssVars = {
       light: {
-        ...baseColor.cssVars.light,
+        // ...baseColor.cssVars.light,
+        ...CARBON_CSS_VARS_LIGHT,
         ...theme.cssVars.light,
       },
       dark: {
-        ...baseColor.cssVars.dark,
+        // ...baseColor.cssVars.dark,
+        ...CARBON_CSS_VARS_DARK,
         ...theme.cssVars.dark,
       },
     }
