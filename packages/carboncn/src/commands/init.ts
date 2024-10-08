@@ -171,42 +171,42 @@ async function promptForConfig(defaultConfig: Config | null = null) {
       active: "yes",
       inactive: "no",
     },
-    {
-      type: "select",
-      name: "style",
-      message: `Which ${highlighter.info("style")} would you like to use?`,
-      choices: styles.map((style) => ({
-        title: style.label,
-        value: style.name,
-      })),
-    },
-    {
-      type: "select",
-      name: "tailwindBaseColor",
-      message: `Which color would you like to use as the ${highlighter.info(
-        "base color"
-      )}?`,
-      choices: baseColors.map((color) => ({
-        title: color.label,
-        value: color.name,
-      })),
-    },
+    // {
+    //   type: "select",
+    //   name: "style",
+    //   message: `Which ${highlighter.info("style")} would you like to use?`,
+    //   choices: styles.map((style) => ({
+    //     title: style.label,
+    //     value: style.name,
+    //   })),
+    // },
+    // {
+    //   type: "select",
+    //   name: "tailwindBaseColor",
+    //   message: `Which color would you like to use as the ${highlighter.info(
+    //     "base color"
+    //   )}?`,
+    //   choices: baseColors.map((color) => ({
+    //     title: color.label,
+    //     value: color.name,
+    //   })),
+    // },
     {
       type: "text",
       name: "tailwindCss",
       message: `Where is your ${highlighter.info("global CSS")} file?`,
       initial: defaultConfig?.tailwind.css ?? DEFAULT_TAILWIND_CSS,
     },
-    {
-      type: "toggle",
-      name: "tailwindCssVariables",
-      message: `Would you like to use ${highlighter.info(
-        "CSS variables"
-      )} for theming?`,
-      initial: defaultConfig?.tailwind.cssVariables ?? true,
-      active: "yes",
-      inactive: "no",
-    },
+    // {
+    //   type: "toggle",
+    //   name: "tailwindCssVariables",
+    //   message: `Would you like to use ${highlighter.info(
+    //     "CSS variables"
+    //   )} for theming?`,
+    //   initial: defaultConfig?.tailwind.cssVariables ?? true,
+    //   active: "yes",
+    //   inactive: "no",
+    // },
     {
       type: "text",
       name: "tailwindPrefix",
@@ -249,12 +249,15 @@ async function promptForConfig(defaultConfig: Config | null = null) {
 
   return rawConfigSchema.parse({
     $schema: "https://carboncn.vercel.app/schema.json",
-    style: options.style,
+    // style: options.style,
+    style: "default",
     tailwind: {
       config: options.tailwindConfig,
       css: options.tailwindCss,
-      baseColor: options.tailwindBaseColor,
-      cssVariables: options.tailwindCssVariables,
+      // baseColor: options.tailwindBaseColor,
+      baseColor: "neutral",
+      // cssVariables: options.tailwindCssVariables,
+      cssVariables: true,
       prefix: options.tailwindPrefix,
     },
     rsc: options.rsc,
@@ -284,42 +287,48 @@ async function promptForMinimalConfig(
     ])
 
     const options = await prompts([
-      {
-        type: "select",
-        name: "style",
-        message: `Which ${highlighter.info("style")} would you like to use?`,
-        choices: styles.map((style) => ({
-          title: style.label,
-          value: style.name,
-        })),
-        initial: styles.findIndex((s) => s.name === style),
-      },
-      {
-        type: "select",
-        name: "tailwindBaseColor",
-        message: `Which color would you like to use as the ${highlighter.info(
-          "base color"
-        )}?`,
-        choices: baseColors.map((color) => ({
-          title: color.label,
-          value: color.name,
-        })),
-      },
-      {
-        type: "toggle",
-        name: "tailwindCssVariables",
-        message: `Would you like to use ${highlighter.info(
-          "CSS variables"
-        )} for theming?`,
-        initial: defaultConfig?.tailwind.cssVariables,
-        active: "yes",
-        inactive: "no",
-      },
+      // {
+      //   type: "select",
+      //   name: "style",
+      //   message: `Which ${highlighter.info("style")} would you like to use?`,
+      //   choices: styles.map((style) => ({
+      //     title: style.label,
+      //     value: style.name,
+      //   })),
+      //   initial: styles.findIndex((s) => s.name === style),
+      // },
+      // {
+      //   type: "select",
+      //   name: "tailwindBaseColor",
+      //   message: `Which color would you like to use as the ${highlighter.info(
+      //     "base color"
+      //   )}?`,
+      //   choices: baseColors.map((color) => ({
+      //     title: color.label,
+      //     value: color.name,
+      //   })),
+      // },
+      // {
+      //   type: "toggle",
+      //   name: "tailwindCssVariables",
+      //   message: `Would you like to use ${highlighter.info(
+      //     "CSS variables"
+      //   )} for theming?`,
+      //   initial: defaultConfig?.tailwind.cssVariables,
+      //   active: "yes",
+      //   inactive: "no",
+      // },
     ])
 
-    style = options.style
-    baseColor = options.tailwindBaseColor
-    cssVariables = options.tailwindCssVariables
+    // style = options.style
+    // baseColor = options.tailwindBaseColor
+    // cssVariables = options.tailwindCssVariables
+
+    // carboncn changes
+
+    style = "default"
+    baseColor = "neutral"
+    cssVariables = true
   }
 
   return rawConfigSchema.parse({

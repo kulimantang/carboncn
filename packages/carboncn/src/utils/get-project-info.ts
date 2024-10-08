@@ -218,10 +218,10 @@ export async function getProjectConfig(
     $schema: "https://carboncn.vercel.app/schema.json",
     rsc: projectInfo.isRSC,
     tsx: projectInfo.isTsx,
-    style: "new-york",
+    style: "default",
     tailwind: {
       config: projectInfo.tailwindConfigFile,
-      baseColor: "zinc",
+      baseColor: "neutral",
       css: projectInfo.tailwindCssFile,
       cssVariables: true,
       prefix: "",
