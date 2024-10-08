@@ -204,6 +204,7 @@ async function addTailwindConfigTheme(
       .replace(/\\\'/g, "'") // Replace \' with '
       .replace(/\\\'\'/g, "'")
       .replace(/\'\'/g, "'")
+
     themeInitializer.replaceWithText(resultString)
   }
 
@@ -384,7 +385,10 @@ function parseValue(node: any): any {
     case SyntaxKind.NullKeyword:
       return null
     case SyntaxKind.ArrayLiteralExpression:
-      return node.elements.map(parseValue)
+      return node.elements.map((element: any) => {
+        const parsed = parseValue(element)
+        return typeof parsed === "string" ? parsed.replace(/\\n/g, "") : parsed
+      })
     default:
       return node.getText()
   }
