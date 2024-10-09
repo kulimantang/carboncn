@@ -18,10 +18,12 @@ export default function IndexPage() {
     <div className="container relative">
       <PageHeader>
         <Announcement />
-        <PageHeaderHeading>Build your component library</PageHeaderHeading>
+        <PageHeaderHeading>
+          Truly accessible Carbon Components
+        </PageHeaderHeading>
         <PageHeaderDescription>
-          Beautifully designed components that you can copy and paste into your
-          apps.
+          Carbon styled components that you can copy and paste into your apps
+          and have full access to.
         </PageHeaderDescription>
         <PageActions>
           <Button asChild size="sm">

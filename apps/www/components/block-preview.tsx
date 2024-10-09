@@ -44,7 +44,7 @@ export function BlockPreview({
       <BlockToolbar block={block} resizablePanelRef={ref} />
       <TabsContent
         value="preview"
-        className="relative after:absolute after:inset-0 after:right-3 after:z-0 after:rounded-lg after:bg-muted"
+        className="relative after:absolute after:inset-0 after:right-3 after:z-0 after:rounded-lg after:bg-muted bg-background"
       >
         <ResizablePanelGroup direction="horizontal" className="relative z-10">
           <ResizablePanel

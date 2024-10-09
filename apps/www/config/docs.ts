@@ -57,11 +57,11 @@ export const docsConfig: DocsConfig = {
           href: "/docs/components-json",
           items: [],
         },
-        {
-          title: "Theming",
-          href: "/docs/theming",
-          items: [],
-        },
+        // {
+        //   title: "Theming",
+        //   href: "/docs/theming",
+        //   items: [],
+        // },
         {
           title: "Dark mode",
           href: "/docs/dark-mode",
@@ -73,22 +73,25 @@ export const docsConfig: DocsConfig = {
           label: "Updated",
           items: [],
         },
-        {
-          title: "Typography",
-          href: "/docs/components/typography",
-          items: [],
-        },
-        {
-          title: "Open in v0",
-          href: "/docs/v0",
-          items: [],
-          label: "New",
-        },
-        {
-          title: "Figma",
-          href: "/docs/figma",
-          items: [],
-        },
+        // {
+        //   title: "Typography",
+        //   href: "/docs/components/typography",
+        //   items: [],
+        // },
+        // {
+        //   title: "Open in v0",
+        //   href: "/docs/v0",
+        //   items: [],
+        //   label: "New",
+        // },
+
+        //TODO: link
+
+        // {
+        //   title: "Figma",
+        //   href: "/docs/figma",
+        //   items: [],
+        // },
         {
           title: "Changelog",
           href: "/docs/changelog",

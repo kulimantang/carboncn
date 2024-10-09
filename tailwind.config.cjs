@@ -121,6 +121,48 @@ module.exports = {
           interactive: "var(--cds-border-interactive)",
           inverse: "var(--cds-border-inverse)",
         },
+        layer: {
+          "01": "var(--cds-layer-01)",
+          "02": "var(--cds-layer-02)",
+          "03": "var(--cds-layer-03)",
+          accent: {
+            "01": "var(--cds-layer-accent-01)",
+            "02": "var(--cds-layer-accent-02)",
+            "03": "var(--cds-layer-accent-03)",
+            active: {
+              "01": "var(--cds-layer-accent-active-01)",
+              "02": "var(--cds-layer-accent-active-02)",
+              "03": "var(--cds-layer-accent-active-03)",
+            },
+            hover: {
+              "01": "var(--cds-layer-accent-hover-01)",
+              "02": "var(--cds-layer-accent-hover-02)",
+              "03": "var(--cds-layer-accent-hover-03)",
+            },
+          },
+          active: {
+            "01": "var(--cds-layer-active-01)",
+            "02": "var(--cds-layer-active-02)",
+            "03": "var(--cds-layer-active-03)",
+          },
+          hover: {
+            "01": "var(--cds-layer-hover-01)",
+            "02": "var(--cds-layer-hover-02)",
+            "03": "var(--cds-layer-hover-03)",
+          },
+          selected: {
+            "01": "var(--cds-layer-selected-01)",
+            "02": "var(--cds-layer-selected-02)",
+            "03": "var(--cds-layer-selected-03)",
+            disabled: "var(--cds-layer-selected-disabled)",
+            hover: {
+              "01": "var(--cds-layer-selected-hover-01)",
+              "02": "var(--cds-layer-selected-hover-02)",
+              "03": "var(--cds-layer-selected-hover-03)",
+            },
+            inverse: "var(--cds-layer-selected-inverse)",
+          },
+        },
       },
       keyframes: {
         "accordion-down": {

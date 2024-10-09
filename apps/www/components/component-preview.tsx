@@ -97,7 +97,10 @@ export function ComponentPreview({
             </TabsList>
           )}
         </div>
-        <TabsContent value="preview" className="relative rounded-md border">
+        <TabsContent
+          value="preview"
+          className="relative rounded-md border bg-background"
+        >
           <div className="flex items-center justify-end p-4">
             {/* <StyleSwitcher /> */}
             <div className="flex items-center gap-2">
