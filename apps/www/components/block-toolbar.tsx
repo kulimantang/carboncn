@@ -38,19 +38,11 @@ export function BlockToolbar({
   return (
     <div className="flex items-center gap-4">
       <div className="flex items-center gap-2">
-        <TabsList className="hidden h-7 rounded-md p-0 px-[calc(theme(spacing.1)_-_2px)] py-[theme(spacing.1)] sm:flex">
-          <TabsTrigger
-            value="preview"
-            className="h-[1.45rem] rounded-sm px-2 text-xs"
-            disabled={isLiftMode}
-          >
+        <TabsList className="hidden rounded-md h-10 p-0 px-[calc(theme(spacing.1)_-_2px)] sm:flex">
+          <TabsTrigger value="preview" disabled={isLiftMode}>
             Preview
           </TabsTrigger>
-          <TabsTrigger
-            value="code"
-            className="h-[1.45rem] rounded-sm px-2 text-xs"
-            disabled={isLiftMode}
-          >
+          <TabsTrigger value="code" disabled={isLiftMode}>
             Code
           </TabsTrigger>
         </TabsList>

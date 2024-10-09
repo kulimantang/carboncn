@@ -455,7 +455,7 @@
   } */
 
   html {
-    @apply scroll-smooth;
+    @apply scroll-smooth font-sans;
   }
 
   body {

@@ -272,13 +272,7 @@ const components = {
     className,
     ...props
   }: React.ComponentProps<typeof TabsTrigger>) => (
-    <TabsTrigger
-      className={cn(
-        "relative h-9 rounded-none border-b-2 border-b-transparent bg-transparent px-4 pb-3 pt-2 font-semibold text-muted-foreground shadow-none transition-none data-[state=active]:border-b-primary data-[state=active]:text-foreground data-[state=active]:shadow-none",
-        className
-      )}
-      {...props}
-    />
+    <TabsTrigger className={cn("mb-[-1px]", className)} {...props} />
   ),
   TabsContent: ({
     className,

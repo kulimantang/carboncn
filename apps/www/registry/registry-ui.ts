@@ -269,12 +269,12 @@ export const ui: Registry = [
   //   type: "registry:ui",
   //   files: ["ui/table.tsx"],
   // },
-  // {
-  //   name: "tabs",
-  //   type: "registry:ui",
-  //   dependencies: ["@radix-ui/react-tabs"],
-  //   files: ["ui/tabs.tsx"],
-  // },
+  {
+    name: "tabs",
+    type: "registry:ui",
+    dependencies: ["@radix-ui/react-tabs"],
+    files: ["ui/tabs.tsx"],
+  },
   // {
   //   name: "textarea",
   //   type: "registry:ui",

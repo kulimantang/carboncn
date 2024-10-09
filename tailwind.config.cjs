@@ -6,7 +6,8 @@ module.exports = {
   content: ["app/**/*.{ts,tsx}", "components/**/*.{ts,tsx}"],
   theme: {
     fontFamily: {
-      sans: ["var(--font-ibm-plex-sans)", ...fontFamily.sans],
+      // sans: ["var(--font-ibm-plex-sans)", ...fontFamily.sans],
+      sans: ["IBM Plex Sans", ...fontFamily.sans],
     },
     container: {
       center: true,
@@ -58,6 +59,7 @@ module.exports = {
             hover: "var(--cds-button-tertiary-hover)",
             active: "var(--cds-button-tertiary-active)",
           },
+          disabled: "var(--cds-button-disabled)",
         },
         link: {
           primary: {
@@ -85,6 +87,10 @@ module.exports = {
           inverse: "var(--cds-text-inverse)",
           primary: "var(--cds-text-primary)",
           secondary: "var(--cds-text-secondary)",
+          disabled: "var(--cds-text-disabled)",
+          error: "var(--cds-text-error)",
+          helper: "var(--cds-text-helper)",
+          placeholder: "var(--cds-text-placeholder)",
         },
         focus: {
           DEFAULT: "var(--cds-focus)",

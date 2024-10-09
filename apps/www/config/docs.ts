@@ -357,11 +357,11 @@ export const docsConfig: DocsConfig = {
         //   href: "/docs/components/table",
         //   items: [],
         // },
-        // {
-        //   title: "Tabs",
-        //   href: "/docs/components/tabs",
-        //   items: [],
-        // },
+        {
+          title: "Tabs",
+          href: "/docs/components/tabs",
+          items: [],
+        },
         // {
         //   title: "Textarea",
         //   href: "/docs/components/textarea",

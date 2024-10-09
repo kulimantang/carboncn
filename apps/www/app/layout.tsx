@@ -12,11 +12,11 @@ import { Toaster as DefaultToaster } from "@/registry/default/ui/toaster"
 import { Toaster as NewYorkSonner } from "@/registry/new-york/ui/sonner"
 import { Toaster as NewYorkToaster } from "@/registry/new-york/ui/toaster"
 
-const ibmPlexSans = IBM_Plex_Sans({
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-  variable: "--font-ibm-plex-sans",
-})
+// const ibmPlexSans = IBM_Plex_Sans({
+//   subsets: ["latin"],
+//   weight: ["400", "500", "700"],
+//   variable: "--font-ibm-plex-sans",
+// })
 
 export const metadata: Metadata = {
   title: {
@@ -88,8 +88,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <head />
         <body
           className={cn(
-            "min-h-screen bg-background font-sans antialiased",
-            ibmPlexSans.variable
+            "min-h-screen bg-background font-sans antialiased"
+            // ibmPlexSans.variable
           )}
         >
           <ThemeProvider
