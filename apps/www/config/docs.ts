@@ -92,11 +92,11 @@ export const docsConfig: DocsConfig = {
         //   href: "/docs/figma",
         //   items: [],
         // },
-        {
-          title: "Changelog",
-          href: "/docs/changelog",
-          items: [],
-        },
+        // {
+        //   title: "Changelog",
+        //   href: "/docs/changelog",
+        //   items: [],
+        // },
       ],
     },
     {
