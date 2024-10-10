@@ -85,10 +85,8 @@ function updateBaseLayerPlugin() {
     postcssPlugin: "update-base-layer",
     Once(root: Root) {
       const requiredRules = [
-        // { selector: "*", apply: "border-border" },
-        { selector: "*", apply: "border-border-subtle" },
-        // { selector: "body", apply: "bg-background text-foreground" },
-        { selector: "body", apply: "bg-background text-text-primary" },
+        { selector: "*", apply: "border-cds-border-subtle" },
+        { selector: "body", apply: "bg-cds-background text-cds-text-primary" },
         { selector: "html", apply: "font-sans" },
       ]
 

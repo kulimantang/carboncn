@@ -93,7 +93,7 @@ export function ComponentPreview({
         </div>
         <TabsContent
           value="preview"
-          className="relative rounded-md border bg-background"
+          className="relative rounded-md border bg-cds-background"
         >
           <div className="flex items-center justify-end p-4">
             {/* <StyleSwitcher /> */}

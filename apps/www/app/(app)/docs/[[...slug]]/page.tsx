@@ -137,7 +137,7 @@ export default async function DocPage({ params }: DocPageProps) {
         <DocsPager doc={doc} />
       </div>
       <div className="hidden text-sm xl:block">
-        <div className="sticky border-l top-12 pl-8 -mt-12 h-[calc(100vh-3rem)] pt-9 bg-background">
+        <div className="sticky border-l top-12 pl-8 -mt-12 h-[calc(100vh-3rem)] pt-9 bg-cds-background">
           <ScrollArea className="h-full pb-10 ">
             {doc.toc && <DashboardTableOfContents toc={toc} />}
           </ScrollArea>
