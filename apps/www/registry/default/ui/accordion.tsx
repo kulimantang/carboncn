@@ -15,7 +15,7 @@ const AccordionItem = React.forwardRef<
   <AccordionPrimitive.Item
     ref={ref}
     className={cn(
-      "use-preflight border-t border-solid border-border-subtle last:border-b hover:border-background-selected [&:hover+&]:border-t-background-selected",
+      "use-preflight hover:border-cds-background-selected [&:hover+&]:border-t-cds-background-selected border-t border-solid border-cds-border-subtle last:border-b",
       className
     )}
     {...props}
@@ -31,7 +31,7 @@ const AccordionTrigger = React.forwardRef<
     <AccordionPrimitive.Trigger
       ref={ref}
       className={cn(
-        "inline-flex h-10 w-full items-center justify-between whitespace-nowrap border border-solid border-transparent bg-transparent px-4 text-sm font-medium text-inherit outline-1 outline-focus hover:bg-background-selected focus:border-focus focus:outline disabled:pointer-events-none [&[data-state=open]>svg]:rotate-180",
+        "hover:bg-cds-background-selected inline-flex h-10 w-full items-center justify-between whitespace-nowrap border border-solid border-transparent bg-transparent px-4 text-sm font-medium text-inherit outline-1 outline-cds-focus focus:border-cds-focus focus:outline disabled:pointer-events-none [&[data-state=open]>svg]:rotate-180",
         className
       )}
       {...props}
