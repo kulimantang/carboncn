@@ -311,3 +311,23 @@ function addOrUpdateVars(
     existingDecl ? existingDecl.replaceWith(newDecl) : ruleNode?.append(newDecl)
   })
 }
+
+export function cssVarsStringToObject(
+  cssString: string
+): Record<string, string> {
+  const lines = cssString.trim().split("\n")
+  const result: Record<string, string> = {}
+
+  lines.forEach((line) => {
+    const [key, value] = line.split(":").map((part) => part.trim())
+    if (key && value) {
+      // Remove '--' prefix from key if present
+      const cleanKey = key.startsWith("--") ? key.slice(2) : key
+      // Remove semicolon from value if present
+      const cleanValue = value.endsWith(";") ? value.slice(0, -1) : value
+      result[cleanKey] = cleanValue
+    }
+  })
+
+  return result
+}

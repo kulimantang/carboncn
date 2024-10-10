@@ -5,6 +5,7 @@ import { getProjectInfo } from "@/src/utils/get-project-info"
 import { highlighter } from "@/src/utils/highlighter"
 import { logger } from "@/src/utils/logger"
 import { spinner } from "@/src/utils/spinner"
+import fastGlob from "fast-glob"
 import fs from "fs-extra"
 import { z } from "zod"
 
@@ -50,6 +51,34 @@ export async function preFlightInit(
   }
 
   projectSpinner?.succeed()
+
+  // Add check for preflight.css in any subdirectory
+  const preflightCssSpinner = spinner(`Checking for existing preflight.css.`, {
+    silent: options.silent,
+  }).start()
+
+  const preflightCssFiles = await fastGlob("**/preflight.css", {
+    cwd: options.cwd,
+    ignore: ["**/node_modules/**", "**/dist/**"],
+  })
+
+  if (preflightCssFiles.length > 0) {
+    errors[ERRORS.PREFLIGHT_CSS_EXISTS] = true
+    preflightCssSpinner?.fail()
+    logger.break()
+    logger.error(
+      `A ${highlighter.info(
+        "preflight.css"
+      )} file already exists in your project at ${highlighter.info(
+        path.join(options.cwd, preflightCssFiles[0])
+      )}.\nTo start over, remove the ${highlighter.info(
+        "preflight.css"
+      )} file and run ${highlighter.info("init")} again.`
+    )
+    logger.break()
+    process.exit(1)
+  }
+  preflightCssSpinner?.succeed()
 
   const frameworkSpinner = spinner(`Verifying framework.`, {
     silent: options.silent,
@@ -129,6 +158,17 @@ export async function preFlightInit(
           )} to learn how to set an import alias.`
         )
       }
+    }
+
+    if (errors[ERRORS.PREFLIGHT_CSS_EXISTS]) {
+      logger.break()
+      logger.error(
+        `A ${highlighter.info(
+          "preflight.css"
+        )} file already exists in your project at ${highlighter.info(
+          path.join(options.cwd, preflightCssFiles[0])
+        )}.`
+      )
     }
 
     logger.break()

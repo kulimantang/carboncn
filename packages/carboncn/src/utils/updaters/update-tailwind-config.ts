@@ -195,7 +195,10 @@ async function addTailwindConfigTheme(
     const themeObjectString = themeInitializer.getText()
     const themeObject = await parseObjectLiteral(themeObjectString)
     const result = deepmerge(themeObject, theme)
-    const resultString = objectToString(result)
+    const resultString = objectToString(result, {
+      indent: "  ",
+      singleQuotes: true,
+    })
       .replace(/\'\"/g, "'") // Replace `\" with "
       .replace(/\"\'/g, "'") // Replace `\" with "
       .replace(/\'\[/g, "[") // Replace `[ with [
@@ -204,6 +207,7 @@ async function addTailwindConfigTheme(
       .replace(/\\\'/g, "'") // Replace \' with '
       .replace(/\\\'\'/g, "'")
       .replace(/\'\'/g, "'")
+      .replace(/,\s*\n\s*\]/g, "]") // Remove trailing commas in arrays
 
     themeInitializer.replaceWithText(resultString)
   }
@@ -387,10 +391,16 @@ function parseValue(node: any): any {
     case SyntaxKind.ArrayLiteralExpression:
       return node.elements.map((element: any) => {
         const parsed = parseValue(element)
-        return typeof parsed === "string" ? parsed.replace(/\\n/g, "") : parsed
+        if (typeof parsed === "string") {
+          // Remove newlines and extra spaces
+          return parsed.replace(/\s+/g, " ").trim()
+        }
+        return parsed
       })
     default:
-      return node.getText()
+      // For other cases, remove newlines and extra spaces
+      const text = node.getText()
+      return typeof text === "string" ? text.replace(/\s+/g, " ").trim() : text
   }
 }
 

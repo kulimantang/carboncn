@@ -11,17 +11,18 @@ import {
   registryResolvedItemsTreeSchema,
   stylesSchema,
 } from "@/src/utils/registry/schema"
-import { buildTailwindThemeColorsFromCssVars } from "@/src/utils/updaters/update-tailwind-config"
+// import { buildTailwindThemeColorsFromCssVars } from "@/src/utils/updaters/update-tailwind-config"
 import deepmerge from "deepmerge"
 import { HttpsProxyAgent } from "https-proxy-agent"
 import fetch from "node-fetch"
 import { z } from "zod"
 
 import {
-  CARBON_CSS_VARS_DARK,
-  CARBON_CSS_VARS_LIGHT,
+  CARBON_CSS_VARS_DARK_STR,
+  CARBON_CSS_VARS_LIGHT_STR,
   CARBON_TAILWIND_COLORS,
 } from "../templates"
+import { cssVarsStringToObject } from "../updaters/update-css-vars"
 
 const REGISTRY_URL = process.env.REGISTRY_URL ?? "https://carboncn.vercel.app/r"
 
@@ -366,11 +367,11 @@ export async function registryGetTheme(name: string, config: Config) {
       config: {
         theme: {
           extend: {
-            borderRadius: {
-              lg: "var(--radius)",
-              md: "calc(var(--radius) - 2px)",
-              sm: "calc(var(--radius) - 4px)",
-            },
+            // borderRadius: {
+            //   lg: "var(--radius)",
+            //   md: "calc(var(--radius) - 2px)",
+            //   sm: "calc(var(--radius) - 4px)",
+            // },
             fontFamily: {
               sans: [
                 "IBM Plex Sans",
@@ -401,12 +402,12 @@ export async function registryGetTheme(name: string, config: Config) {
     theme.cssVars = {
       light: {
         // ...baseColor.cssVars.light,
-        ...CARBON_CSS_VARS_LIGHT,
+        ...cssVarsStringToObject(CARBON_CSS_VARS_LIGHT_STR),
         ...theme.cssVars.light,
       },
       dark: {
         // ...baseColor.cssVars.dark,
-        ...CARBON_CSS_VARS_DARK,
+        ...cssVarsStringToObject(CARBON_CSS_VARS_DARK_STR),
         ...theme.cssVars.dark,
       },
     }
