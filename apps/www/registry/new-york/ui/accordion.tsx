@@ -15,7 +15,7 @@ const AccordionItem = React.forwardRef<
   <AccordionPrimitive.Item
     ref={ref}
     className={cn(
-      "use-preflight hover:border-cds-background-selected [&:hover+&]:border-t-cds-background-selected border-t border-solid border-cds-border-subtle last:border-b",
+      "hover:border-cds-background-selected [&:hover+&]:border-t-cds-background-selected border-t border-solid border-cds-border-subtle last:border-b",
       className
     )}
     {...props}

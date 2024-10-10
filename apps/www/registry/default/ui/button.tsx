@@ -5,7 +5,7 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center use-preflight whitespace-nowrap text-sm font-medium ring-inset focus:outline-none disabled:cursor-not-allowed border-transparent focus:ring-1 border focus:ring-offset-1 disabled:bg-cds-button-disabled disabled:text-cds-text-disabled disabled:border-cds-border-disabled focus:ring-offset-cds-focus focus:border-cds-focus focus:ring-cds-focus-inset",
+  "inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-inset focus:outline-none disabled:cursor-not-allowed border-transparent focus:ring-1 border focus:ring-offset-1 disabled:bg-cds-button-disabled disabled:text-cds-text-disabled disabled:border-cds-border-disabled focus:ring-offset-cds-focus focus:border-cds-focus focus:ring-cds-focus-inset",
   {
     variants: {
       variant: {
@@ -20,7 +20,7 @@ const buttonVariants = cva(
         secondary:
           "bg-cds-button-secondary border-cds-button-secondary text-cds-text-on-color hover:bg-cds-button-secondary-hover hover:border-cds-button-secondary-hover active:bg-cds-button-secondary-active",
         ghost:
-          "bg-transparent border-transparent text-cds-link-primary hover:text-cds-link-primary-hover hover:bg-cds-hover active:bg-cds-background-active",
+          "bg-transparent border-transparent text-cds-link-primary hover:text-cds-link-primary-hover hover:bg-cds-background-hover active:bg-cds-background-active",
         link: "",
       },
       size: {
@@ -51,7 +51,6 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         className={cn(buttonVariants({ variant, size, className }))}
         ref={ref}
         {...props}
-        data-use-preflight
       />
     )
   }

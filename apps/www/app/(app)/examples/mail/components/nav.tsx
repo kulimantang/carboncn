@@ -61,8 +61,8 @@ export function Nav({ links, isCollapsed }: NavProps) {
               className={cn(
                 buttonVariants({ variant: link.variant, size: "sm" }),
                 link.variant === "default" &&
-                  "dark:bg-muted dark:text-white dark:hover:bg-muted dark:hover:text-white",
-                "justify-start"
+                  "dark:bg-muted !text-white dark:text-white dark:hover:bg-muted dark:hover:text-white",
+                "justify-start text-cds-text-primary"
               )}
             >
               <link.icon className="mr-2 h-4 w-4" />
