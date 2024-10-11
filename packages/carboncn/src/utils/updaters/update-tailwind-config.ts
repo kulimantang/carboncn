@@ -101,6 +101,9 @@ export async function transformTailwindConfig(
     addTailwindConfigPlugin(configObject, plugin)
   })
 
+  // Add Tailwind corePlugins.
+  addTailwindConfigCorePlugins(configObject)
+
   // Add Tailwind config theme.
   if (tailwindConfig.theme) {
     await addTailwindConfigTheme(configObject, tailwindConfig.theme)
@@ -214,6 +217,39 @@ async function addTailwindConfigTheme(
 
   // Unnest all spread properties.
   unnestSpreadProperties(configObject)
+}
+
+function addTailwindConfigCorePlugins(configObject: ObjectLiteralExpression) {
+  const existingCorePlugins = configObject.getProperty("corePlugins")
+
+  if (!existingCorePlugins) {
+    configObject.addPropertyAssignment({
+      name: "corePlugins",
+      initializer: "{ preflight: false }",
+    })
+    return configObject
+  }
+
+  if (existingCorePlugins.isKind(SyntaxKind.PropertyAssignment)) {
+    const initializer = existingCorePlugins.getInitializer()
+
+    if (initializer?.isKind(SyntaxKind.ObjectLiteralExpression)) {
+      const corePluginsObject = initializer as ObjectLiteralExpression
+      const preflightProperty = corePluginsObject.getProperty("preflight")
+
+      if (!preflightProperty) {
+        corePluginsObject.addPropertyAssignment({
+          name: "preflight",
+          initializer: "false",
+        })
+      } else if (preflightProperty.isKind(SyntaxKind.PropertyAssignment)) {
+        const preflightAssignment = preflightProperty as PropertyAssignment
+        preflightAssignment.setInitializer("false")
+      }
+    }
+  }
+
+  return configObject
 }
 
 function addTailwindConfigPlugin(

@@ -25,6 +25,10 @@ export default function IndexPage() {
           Carbon styled components that you can copy and paste into your apps
           and have full access to.
         </PageHeaderDescription>
+        <p className="font-bold">100% compatible with Tailwind CSS</p>
+        <p className="font-bold">
+          100% compatible with the original Carbon Components
+        </p>
         <PageActions>
           <Button asChild size="sm">
             <Link href="/docs">Get Started</Link>

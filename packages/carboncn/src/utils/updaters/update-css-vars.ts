@@ -1,4 +1,4 @@
-import { promises as fs } from "fs"
+import { existsSync, promises as fs } from "fs"
 import path from "path"
 import { Config } from "@/src/utils/get-config"
 import { highlighter } from "@/src/utils/highlighter"
@@ -9,6 +9,8 @@ import AtRule from "postcss/lib/at-rule"
 import Root from "postcss/lib/root"
 import Rule from "postcss/lib/rule"
 import { z } from "zod"
+
+import { PREFLIGHT_CSS } from "../templates"
 
 export async function updateCssVars(
   cssVars: z.infer<typeof registryItemCssVarsSchema> | undefined,
@@ -48,6 +50,25 @@ export async function updateCssVars(
   })
   await fs.writeFile(cssFilepath, output, "utf8")
   cssVarsSpinner.succeed()
+
+  // CREATE PREFLIGHT.CSS IF IT DOESN'T EXIST
+  const preflightContent = PREFLIGHT_CSS
+  const tailwindDir = path.dirname(config.resolvedPaths.tailwindCss)
+  const preflightPath = path.join(tailwindDir, "preflight.css")
+
+  if (!existsSync(preflightPath)) {
+    const preflightSpinner = spinner(`Creating preflight.css`, {
+      silent: options.silent,
+    }).start()
+    await fs.writeFile(preflightPath, preflightContent, "utf8")
+    const preflightRelativePath = path.relative(
+      config.resolvedPaths.cwd,
+      preflightPath
+    )
+    preflightSpinner.succeed(
+      `Created ${highlighter.info(preflightRelativePath)}`
+    )
+  }
 }
 
 export async function transformCssVars(
@@ -151,6 +172,8 @@ function updateCssVarsPlugin(
   return {
     postcssPlugin: "update-css-vars",
     Once(root: Root) {
+      addPreflightImport(root) // Add this line
+
       let baseLayer = root.nodes.find(
         (node) =>
           node.type === "atrule" &&
@@ -181,6 +204,19 @@ function updateCssVarsPlugin(
         })
       }
     },
+  }
+}
+
+function addPreflightImport(root: Root) {
+  const existingImport = root.nodes.find(
+    (node): node is AtRule =>
+      node.type === "atrule" &&
+      node.name === "import" &&
+      node.params.includes("preflight.css")
+  )
+
+  if (!existingImport) {
+    root.prepend(postcss.atRule({ name: "import", params: '"preflight.css"' }))
   }
 }
 

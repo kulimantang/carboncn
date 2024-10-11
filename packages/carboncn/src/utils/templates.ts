@@ -604,6 +604,302 @@ export const CARBON_TAILWIND_COLORS = {
         "warm-gray": "var(--cds-tag-border-warm-gray)",
       },
     },
+    yellow: {
+      10: "#fcf4d6",
+      20: "#fddc69",
+      30: "#f1c21b",
+      40: "#d2a106",
+      50: "#b28600",
+      60: "#8e6a00",
+      70: "#684e00",
+      80: "#483700",
+      90: "#302400",
+      100: "#1c1500",
+      hover: {
+        10: "#f8e6a0",
+        20: "#fccd27",
+        30: "#ddb00e",
+        40: "#bc9005",
+        50: "#9e7700",
+        60: "#755800",
+        70: "#806000",
+        80: "#5c4600",
+        90: "#3d2e00",
+        100: "#332600",
+      },
+    },
+    orange: {
+      10: "#fff2e8",
+      20: "#ffd9be",
+      30: "#ffb784",
+      40: "#ff832b",
+      50: "#eb6200",
+      60: "#ba4e00",
+      70: "#8a3800",
+      80: "#5e2900",
+      90: "#3e1a00",
+      100: "#231000",
+      hover: {
+        10: "#ffe2cc",
+        20: "#ffc69e",
+        30: "#ff9d57",
+        40: "#fa6800",
+        50: "#cc5500",
+        60: "#9e4200",
+        70: "#a84400",
+        80: "#753300",
+        90: "#522200",
+        100: "#421e00",
+      },
+    },
+    red: {
+      10: "#fff1f1",
+      20: "#ffd7d9",
+      30: "#ffb3b8",
+      40: "#ff8389",
+      50: "#fa4d56",
+      60: "#da1e28",
+      70: "#a2191f",
+      80: "#750e13",
+      90: "#520408",
+      100: "#2d0709",
+      hover: {
+        10: "#ffe0e0",
+        20: "#ffc2c5",
+        30: "#ff99a0",
+        40: "#ff6168",
+        50: "#ee0713",
+        60: "#b81922",
+        70: "#c21e25",
+        80: "#921118",
+        90: "#66050a",
+        100: "#540d11",
+      },
+    },
+    magenta: {
+      10: "#fff0f7",
+      20: "#ffd6e8",
+      30: "#ffafd2",
+      40: "#ff7eb6",
+      50: "#ee5396",
+      60: "#d02670",
+      70: "#9f1853",
+      80: "#740937",
+      90: "#510224",
+      100: "#2a0a18",
+      hover: {
+        10: "#ffe0ef",
+        20: "#ffbdda",
+        30: "#ff94c3",
+        40: "#ff57a0",
+        50: "#e3176f",
+        60: "#b0215f",
+        70: "#bf1d63",
+        80: "#8e0b43",
+        90: "#68032e",
+        100: "#53142f",
+      },
+    },
+    purple: {
+      10: "#f6f2ff",
+      20: "#e8daff",
+      30: "#d4bbff",
+      40: "#be95ff",
+      50: "#a56eff",
+      60: "#8a3ffc",
+      70: "#6929c4",
+      80: "#491d8b",
+      90: "#31135e",
+      100: "#1c0f30",
+      hover: {
+        10: "#ede5ff",
+        20: "#dcc7ff",
+        30: "#c5a3ff",
+        40: "#ae7aff",
+        50: "#9352ff",
+        60: "#7822fb",
+        70: "#7c3dd6",
+        80: "#5b24ad",
+        90: "#40197b",
+        100: "#341c59",
+      },
+    },
+    blue: {
+      10: "#edf5ff",
+      20: "#d0e2ff",
+      30: "#a6c8ff",
+      40: "#78a9ff",
+      50: "#4589ff",
+      60: "#0f62fe",
+      70: "#0043ce",
+      80: "#002d9c",
+      90: "#001d6c",
+      100: "#001141",
+      hover: {
+        10: "#dbebff",
+        20: "#b8d3ff",
+        30: "#8ab6ff",
+        40: "#5c97ff",
+        50: "#1f70ff",
+        60: "#0050e6",
+        70: "#0053ff",
+        80: "#0039c7",
+        90: "#00258a",
+        100: "#001f75",
+      },
+    },
+    cyan: {
+      10: "#e5f6ff",
+      20: "#bae6ff",
+      30: "#82cfff",
+      40: "#33b1ff",
+      50: "#1192e8",
+      60: "#0072c3",
+      70: "#00539a",
+      80: "#003a6d",
+      90: "#012749",
+      100: "#061727",
+      hover: {
+        10: "#cceeff",
+        20: "#99daff",
+        30: "#57beff",
+        40: "#059fff",
+        50: "#0f7ec8",
+        60: "#005fa3",
+        70: "#0066bd",
+        80: "#00498a",
+        90: "#013360",
+        100: "#0b2947",
+      },
+    },
+    teal: {
+      10: "#d9fbfb",
+      20: "#9ef0f0",
+      30: "#3ddbd9",
+      40: "#08bdba",
+      50: "#009d9a",
+      60: "#007d79",
+      70: "#005d5d",
+      80: "#004144",
+      90: "#022b30",
+      100: "#081a1c",
+      hover: {
+        10: "#acf6f6",
+        20: "#57e5e5",
+        30: "#25cac8",
+        40: "#07aba9",
+        50: "#008a87",
+        60: "#006b68",
+        70: "#007070",
+        80: "#005357",
+        90: "#033940",
+        100: "#0f3034",
+      },
+    },
+    green: {
+      10: "#defbe6",
+      20: "#a7f0ba",
+      30: "#6fdc8c",
+      40: "#42be65",
+      50: "#24a148",
+      60: "#198038",
+      70: "#0e6027",
+      80: "#044317",
+      90: "#022d0d",
+      100: "#071908",
+      hover: {
+        10: "#b6f6c8",
+        20: "#74e792",
+        30: "#36ce5e",
+        40: "#3bab5a",
+        50: "#208e3f",
+        60: "#166f31",
+        70: "#11742f",
+        80: "#05521c",
+        90: "#033b11",
+        100: "#0d300f",
+      },
+    },
+    coolGray: {
+      10: "#f2f4f8",
+      20: "#dde1e6",
+      30: "#c1c7cd",
+      40: "#a2a9b0",
+      50: "#878d96",
+      60: "#697077",
+      70: "#4d5358",
+      80: "#343a3f",
+      90: "#21272a",
+      100: "#121619",
+      hover: {
+        10: "#e4e9f1",
+        20: "#cdd3da",
+        30: "#adb5bd",
+        40: "#9199a1",
+        50: "#757b85",
+        60: "#585e64",
+        70: "#5d646a",
+        80: "#434a51",
+        90: "#2b3236",
+        100: "#222a2f",
+      },
+    },
+    gray: {
+      10: "#f4f4f4",
+      20: "#e0e0e0",
+      30: "#c6c6c6",
+      40: "#a8a8a8",
+      50: "#8d8d8d",
+      60: "#6f6f6f",
+      70: "#525252",
+      80: "#393939",
+      90: "#262626",
+      100: "#161616",
+      hover: {
+        10: "#e8e8e8",
+        20: "#d1d1d1",
+        30: "#b5b5b5",
+        40: "#999999",
+        50: "#7a7a7a",
+        60: "#5e5e5e",
+        70: "#636363",
+        80: "#474747",
+        90: "#333333",
+        100: "#292929",
+      },
+    },
+    warmGray: {
+      10: "#f7f3f2",
+      20: "#e5e0df",
+      30: "#cac5c4",
+      40: "#ada8a8",
+      50: "#8f8b8b",
+      60: "#726e6e",
+      70: "#565151",
+      80: "#3c3838",
+      90: "#272525",
+      100: "#171414",
+      hover: {
+        10: "#f0e8e6",
+        20: "#d8d0cf",
+        30: "#b9b3b1",
+        40: "#9c9696",
+        50: "#7f7b7b",
+        60: "#605d5d",
+        70: "#696363",
+        80: "#4c4848",
+        90: "#343232",
+        100: "#2c2626",
+      },
+    },
+    black: {
+      DEFAULT: "#000000",
+      hover: "#212121",
+    },
+    white: {
+      DEFAULT: "#ffffff",
+      hover: "#e8e8e8",
+    },
   },
 }
 export const CARBON_CSS_VARS_LIGHT_STR = `
@@ -1050,3 +1346,248 @@ export const CARBON_CSS_VARS_DARK_STR = `
     --cds-tag-color-warm-gray: #f7f3f2;
     --cds-tag-hover-warm-gray: #696363;
     `
+
+export const PREFLIGHT_CSS = `
+/*
+ * Custom Preflight CSS
+ *
+ * Purpose:
+ * - Resets default HTML element styles
+ * - Provides base for Tailwind CSS
+ *
+ * Note: Carbon Design System components (classes starting with "cds--") are excluded
+ * to prevent styling conflicts and maintain their intended appearance.
+ *
+ * This custom implementation allows Tailwind and Carbon to coexist without issues.
+ *
+ * Ref: https://tailwindcss.com/docs/preflight
+ */
+
+
+
+:where(*:not([class^="cds--"])),
+:where(*:not([class^="cds--"])::before),
+:where(*:not([class^="cds--"])::after) {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: currentcolor;
+}
+
+:where(html) {
+    line-height: 1.5;
+    text-size-adjust: 100%;
+    tab-size: 4;
+}
+
+:where(body) {
+    margin: 0;
+    line-height: inherit;
+}
+
+:where(hr:not([class^="cds--"])) {
+    height: 0;
+    color: inherit;
+    border-top-width: 1px;
+}
+
+:where(abbr:where([title]):not([class^="cds--"])) {
+    text-decoration: underline dotted;
+}
+
+:where(h1:not([class^="cds--"])),
+:where(h2:not([class^="cds--"])),
+:where(h3:not([class^="cds--"])),
+:where(h4:not([class^="cds--"])),
+:where(h5:not([class^="cds--"])),
+:where(h6:not([class^="cds--"])) {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+:where(a:not([class^="cds--"])) {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+:where(b:not([class^="cds--"])),
+:where(strong:not([class^="cds--"])) {
+    font-weight: bolder;
+}
+
+:where(code:not([class^="cds--"])),
+:where(kbd:not([class^="cds--"])),
+:where(samp:not([class^="cds--"])),
+:where(pre:not([class^="cds--"])) {
+    font-family:
+        "fontFamily.mono",
+        ui-monospace,
+        SFMono-Regular,
+        Menlo,
+        Monaco,
+        Consolas,
+        "Liberation Mono",
+        "Courier New",
+        monospace;
+    font-size: 1em;
+}
+
+:where(small:not([class^="cds--"])) {
+    font-size: 80%;
+}
+
+:where(sub:not([class^="cds--"])),
+:where(sup:not([class^="cds--"])) {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+:where(sub:not([class^="cds--"])) {
+    bottom: -0.25em;
+}
+
+:where(sup:not([class^="cds--"])) {
+    top: -0.5em;
+}
+
+:where(table:not([class^="cds--"])) {
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse;
+}
+
+:where(button:not([class^="cds--"])),
+:where(input:not([class^="cds--"])),
+:where(optgroup:not([class^="cds--"])),
+:where(select:not([class^="cds--"])),
+:where(textarea:not([class^="cds--"])) {
+    font-family: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+:where(button:not([class^="cds--"])),
+:where(select:not([class^="cds--"])) {
+    text-transform: none;
+}
+
+:where(button:not([class^="cds--"])),
+:where([type="button"]:not([class^="cds--"])),
+:where([type="reset"]:not([class^="cds--"])),
+:where([type="submit"]:not([class^="cds--"])) {
+    appearance: button;
+    background-color: transparent;
+    background-image: none;
+}
+
+:where(:-moz-focusring:not([class^="cds--"])) {
+    outline: auto;
+}
+
+:where(:-moz-ui-invalid:not([class^="cds--"])) {
+    box-shadow: none;
+}
+
+:where(progress:not([class^="cds--"])) {
+    vertical-align: baseline;
+}
+
+:where(::-webkit-inner-spin-button:not([class^="cds--"])),
+:where(::-webkit-outer-spin-button:not([class^="cds--"])) {
+    height: auto;
+}
+
+:where([type="search"]:not([class^="cds--"])) {
+    appearance: textfield;
+    outline-offset: -2px;
+}
+
+:where(::-webkit-search-decoration:not([class^="cds--"])) {
+    appearance: none;
+}
+
+:where(::-webkit-file-upload-button:not([class^="cds--"])) {
+    appearance: button;
+    font: inherit;
+}
+
+:where(summary:not([class^="cds--"])) {
+    display: list-item;
+}
+
+:where(blockquote:not([class^="cds--"])),
+:where(dl:not([class^="cds--"])),
+:where(dd:not([class^="cds--"])),
+:where(h1:not([class^="cds--"])),
+:where(h2:not([class^="cds--"])),
+:where(h3:not([class^="cds--"])),
+:where(h4:not([class^="cds--"])),
+:where(h5:not([class^="cds--"])),
+:where(h6:not([class^="cds--"])),
+:where(hr:not([class^="cds--"])),
+:where(figure:not([class^="cds--"])),
+:where(p:not([class^="cds--"])),
+:where(pre:not([class^="cds--"])) {
+    margin: 0;
+}
+
+:where(fieldset:not([class^="cds--"])) {
+    margin: 0;
+    padding: 0;
+}
+
+:where(legend:not([class^="cds--"])) {
+    padding: 0;
+}
+
+:where(ol:not([class^="cds--"])),
+:where(ul:not([class^="cds--"])),
+:where(menu:not([class^="cds--"])) {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+:where(textarea:not([class^="cds--"])) {
+    resize: vertical;
+}
+
+:where(input::placeholder:not([class^="cds--"])),
+:where(textarea::placeholder:not([class^="cds--"])) {
+    opacity: 1;
+    color: #9ca3af;
+}
+
+:where(button:not([class^="cds--"])),
+:where([role="button"]:not([class^="cds--"])) {
+    cursor: pointer;
+}
+
+:where(:disabled:not([class^="cds--"])) {
+    cursor: default;
+}
+
+:where(img:not([class^="cds--"])),
+:where(svg:not([class^="cds--"])),
+:where(video:not([class^="cds--"])),
+:where(canvas:not([class^="cds--"])),
+:where(audio:not([class^="cds--"])),
+:where(iframe:not([class^="cds--"])),
+:where(embed:not([class^="cds--"])),
+:where(object:not([class^="cds--"])) {
+    display: block;
+    vertical-align: middle;
+}
+
+:where(img:not([class^="cds--"])),
+:where(video:not([class^="cds--"])) {
+    max-width: 100%;
+    height: auto;
+}
+`
