@@ -96,12 +96,12 @@ export const ui: Registry = [
   //   registryDependencies: ["card"],
   //   dependencies: ["recharts", "lucide-react"],
   // },
-  // {
-  //   name: "checkbox",
-  //   type: "registry:ui",
-  //   dependencies: ["@radix-ui/react-checkbox"],
-  //   files: ["ui/checkbox.tsx"],
-  // },
+  {
+    name: "checkbox",
+    type: "registry:ui",
+    dependencies: ["@radix-ui/react-checkbox"],
+    files: ["ui/checkbox.tsx"],
+  },
   // {
   //   name: "collapsible",
   //   type: "registry:ui",

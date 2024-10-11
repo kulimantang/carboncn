@@ -202,11 +202,11 @@ export const docsConfig: DocsConfig = {
         //   href: "/docs/components/chart",
         //   items: [],
         // },
-        // {
-        //   title: "Checkbox",
-        //   href: "/docs/components/checkbox",
-        //   items: [],
-        // },
+        {
+          title: "Checkbox",
+          href: "/docs/components/checkbox",
+          items: [],
+        },
         // {
         //   title: "Collapsible",
         //   href: "/docs/components/collapsible",
