@@ -1,7 +1,8 @@
 "use client"
 
 import * as React from "react"
-import { Check, ChevronsUpDown } from "lucide-react"
+import { ChevronDown } from "@carbon/icons-react"
+import { Check } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/registry/default/ui/button"
@@ -50,15 +51,15 @@ export default function ComboboxDemo() {
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>
         <Button
-          variant="outline"
+          variant="dropdown"
           role="combobox"
           aria-expanded={open}
-          className="w-[200px] justify-between"
+          className="w-[200px] justify-between pr-4"
         >
           {value
             ? frameworks.find((framework) => framework.value === value)?.label
             : "Select framework..."}
-          <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
+          <ChevronDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
         </Button>
       </PopoverTrigger>
       <PopoverContent className="w-[200px] p-0">
@@ -75,14 +76,19 @@ export default function ComboboxDemo() {
                     setValue(currentValue === value ? "" : currentValue)
                     setOpen(false)
                   }}
+                  className={cn(
+                    "flex items-center justify-between border-2 border-solid border-transparent",
+                    framework.value === value &&
+                      "border-cds-focus bg-cds-background-selected-hover"
+                  )}
                 >
+                  {framework.label}
                   <Check
                     className={cn(
                       "mr-2 h-4 w-4",
                       value === framework.value ? "opacity-100" : "opacity-0"
                     )}
                   />
-                  {framework.label}
                 </CommandItem>
               ))}
             </CommandGroup>

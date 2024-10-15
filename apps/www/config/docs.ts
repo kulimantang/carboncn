@@ -152,11 +152,11 @@ export const docsConfig: DocsConfig = {
         //   href: "/docs/components/alert",
         //   items: [],
         // },
-        // {
-        //   title: "Alert Dialog",
-        //   href: "/docs/components/alert-dialog",
-        //   items: [],
-        // },
+        {
+          title: "Alert Dialog",
+          href: "/docs/components/alert-dialog",
+          items: [],
+        },
         // {
         //   title: "Aspect Ratio",
         //   href: "/docs/components/aspect-ratio",
@@ -167,11 +167,11 @@ export const docsConfig: DocsConfig = {
         //   href: "/docs/components/avatar",
         //   items: [],
         // },
-        // {
-        //   title: "Badge",
-        //   href: "/docs/components/badge",
-        //   items: [],
-        // },
+        {
+          title: "Badge",
+          href: "/docs/components/badge",
+          items: [],
+        },
         // {
         //   title: "Breadcrumb",
         //   href: "/docs/components/breadcrumb",
@@ -187,11 +187,11 @@ export const docsConfig: DocsConfig = {
         //   href: "/docs/components/calendar",
         //   items: [],
         // },
-        // {
-        //   title: "Card",
-        //   href: "/docs/components/card",
-        //   items: [],
-        // },
+        {
+          title: "Card",
+          href: "/docs/components/card",
+          items: [],
+        },
         // {
         //   title: "Carousel",
         //   href: "/docs/components/carousel",
@@ -212,16 +212,16 @@ export const docsConfig: DocsConfig = {
         //   href: "/docs/components/collapsible",
         //   items: [],
         // },
-        // {
-        //   title: "Combobox",
-        //   href: "/docs/components/combobox",
-        //   items: [],
-        // },
-        // {
-        //   title: "Command",
-        //   href: "/docs/components/command",
-        //   items: [],
-        // },
+        {
+          title: "Combobox",
+          href: "/docs/components/combobox",
+          items: [],
+        },
+        {
+          title: "Command",
+          href: "/docs/components/command",
+          items: [],
+        },
         // {
         //   title: "Context Menu",
         //   href: "/docs/components/context-menu",
@@ -237,21 +237,21 @@ export const docsConfig: DocsConfig = {
         //   href: "/docs/components/date-picker",
         //   items: [],
         // },
-        // {
-        //   title: "Dialog",
-        //   href: "/docs/components/dialog",
-        //   items: [],
-        // },
+        {
+          title: "Dialog",
+          href: "/docs/components/dialog",
+          items: [],
+        },
         // {
         //   title: "Drawer",
         //   href: "/docs/components/drawer",
         //   items: [],
         // },
-        // {
-        //   title: "Dropdown Menu",
-        //   href: "/docs/components/dropdown-menu",
-        //   items: [],
-        // },
+        {
+          title: "Dropdown Menu",
+          href: "/docs/components/dropdown-menu",
+          items: [],
+        },
         // {
         //   title: "Form",
         //   href: "/docs/components/form",
@@ -272,11 +272,11 @@ export const docsConfig: DocsConfig = {
         //   href: "/docs/components/input-otp",
         //   items: [],
         // },
-        // {
-        //   title: "Label",
-        //   href: "/docs/components/label",
-        //   items: [],
-        // },
+        {
+          title: "Label",
+          href: "/docs/components/label",
+          items: [],
+        },
         // {
         //   title: "Menubar",
         //   href: "/docs/components/menubar",
@@ -292,11 +292,11 @@ export const docsConfig: DocsConfig = {
         //   href: "/docs/components/pagination",
         //   items: [],
         // },
-        // {
-        //   title: "Popover",
-        //   href: "/docs/components/popover",
-        //   items: [],
-        // },
+        {
+          title: "Popover",
+          href: "/docs/components/popover",
+          items: [],
+        },
         // {
         //   title: "Progress",
         //   href: "/docs/components/progress",

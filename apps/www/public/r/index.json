@@ -43,6 +43,32 @@
     }
   },
   {
+    "name": "alert-dialog",
+    "type": "registry:ui",
+    "dependencies": [
+      "@radix-ui/react-alert-dialog"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
+    "files": [
+      {
+        "path": "ui/alert-dialog.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  {
+    "name": "badge",
+    "type": "registry:ui",
+    "files": [
+      {
+        "path": "ui/badge.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  {
     "name": "button",
     "type": "registry:ui",
     "dependencies": [
@@ -51,6 +77,16 @@
     "files": [
       {
         "path": "ui/button.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  {
+    "name": "card",
+    "type": "registry:ui",
+    "files": [
+      {
+        "path": "ui/card.tsx",
         "type": "registry:ui"
       }
     ]
@@ -69,11 +105,79 @@
     ]
   },
   {
+    "name": "command",
+    "type": "registry:ui",
+    "dependencies": [
+      "cmdk@1.0.0"
+    ],
+    "registryDependencies": [
+      "dialog"
+    ],
+    "files": [
+      {
+        "path": "ui/command.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  {
+    "name": "dialog",
+    "type": "registry:ui",
+    "dependencies": [
+      "@radix-ui/react-dialog"
+    ],
+    "files": [
+      {
+        "path": "ui/dialog.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  {
+    "name": "dropdown-menu",
+    "type": "registry:ui",
+    "dependencies": [
+      "@radix-ui/react-dropdown-menu"
+    ],
+    "files": [
+      {
+        "path": "ui/dropdown-menu.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  {
     "name": "input",
     "type": "registry:ui",
     "files": [
       {
         "path": "ui/input.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  {
+    "name": "label",
+    "type": "registry:ui",
+    "dependencies": [
+      "@radix-ui/react-label"
+    ],
+    "files": [
+      {
+        "path": "ui/label.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  {
+    "name": "popover",
+    "type": "registry:ui",
+    "dependencies": [
+      "@radix-ui/react-popover"
+    ],
+    "files": [
+      {
+        "path": "ui/popover.tsx",
         "type": "registry:ui"
       }
     ]

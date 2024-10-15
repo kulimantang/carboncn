@@ -24,7 +24,7 @@ export default function DialogDemo() {
             Make changes to your profile here. Click save when you're done.
           </DialogDescription>
         </DialogHeader>
-        <div className="grid gap-4 py-4">
+        <div className="grid gap-4 py-4 px-6">
           <div className="grid grid-cols-4 items-center gap-4">
             <Label htmlFor="name" className="text-right">
               Name
@@ -32,7 +32,7 @@ export default function DialogDemo() {
             <Input
               id="name"
               defaultValue="Pedro Duarte"
-              className="col-span-3"
+              className="col-span-3 bg-cds-layer-02"
             />
           </div>
           <div className="grid grid-cols-4 items-center gap-4">
@@ -42,7 +42,7 @@ export default function DialogDemo() {
             <Input
               id="username"
               defaultValue="@peduarte"
-              className="col-span-3"
+              className="col-span-3 w-full bg-cds-layer-02"
             />
           </div>
         </div>

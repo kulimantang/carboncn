@@ -5,7 +5,7 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-inset focus:outline-none disabled:cursor-not-allowed border-transparent focus:ring-1 border focus:ring-offset-1 disabled:bg-cds-button-disabled disabled:text-cds-text-disabled disabled:border-cds-border-disabled focus:ring-offset-cds-focus focus:border-cds-focus focus:ring-cds-focus-inset",
+  "whitespace-nowrap text-sm font-medium ring-inset focus:outline-none disabled:cursor-not-allowed border-transparent focus:ring-1 border focus:ring-offset-1 disabled:bg-cds-button-disabled disabled:text-cds-text-disabled disabled:border-cds-border-disabled focus:ring-offset-cds-focus focus:border-cds-focus focus:ring-cds-focus-inset inline-flex items-center",
   {
     variants: {
       variant: {
@@ -20,14 +20,16 @@ const buttonVariants = cva(
         secondary:
           "bg-cds-button-secondary border-cds-button-secondary text-cds-text-on-color hover:bg-cds-button-secondary-hover hover:border-cds-button-secondary-hover active:bg-cds-button-secondary-active",
         ghost:
-          "bg-transparent border-transparent text-cds-link-primary hover:text-cds-link-primary-hover hover:bg-cds-hover active:bg-cds-background-active",
+          "bg-transparent border-transparent text-cds-link-primary hover:text-cds-link-primary-hover hover:bg-cds-background-hover active:bg-cds-background-active",
         link: "",
+        dropdown:
+          "border-transparent text-cds-text-primary box-border flex h-10 w-full rounded-none border-b border-b-cds-border-strong bg-cds-field px-4 py-2 text-sm outline-cds-focus file:border-0 file:bg-transparent  file:text-sm file:font-medium disabled:cursor-not-allowed disabled:opacity-50 hover:bg-cds-field-hover",
       },
       size: {
         default: "h-12 px-4 py-[14px] pl-[15px] pr-[63px]",
         sm: "h-9 px-3",
-        lg: "h-11 px-8",
-        icon: "h-10 w-10",
+        lg: "h-16 px-4 pt-[14px] pb-8",
+        icon: "h-12 w-12 p-2",
       },
     },
     defaultVariants: {

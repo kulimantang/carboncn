@@ -34,13 +34,13 @@ export const ui: Registry = [
   //   type: "registry:ui",
   //   files: ["ui/alert.tsx"],
   // },
-  // {
-  //   name: "alert-dialog",
-  //   type: "registry:ui",
-  //   dependencies: ["@radix-ui/react-alert-dialog"],
-  //   registryDependencies: ["button"],
-  //   files: ["ui/alert-dialog.tsx"],
-  // },
+  {
+    name: "alert-dialog",
+    type: "registry:ui",
+    dependencies: ["@radix-ui/react-alert-dialog"],
+    registryDependencies: ["button"],
+    files: ["ui/alert-dialog.tsx"],
+  },
   // {
   //   name: "aspect-ratio",
   //   type: "registry:ui",
@@ -53,11 +53,11 @@ export const ui: Registry = [
   //   dependencies: ["@radix-ui/react-avatar"],
   //   files: ["ui/avatar.tsx"],
   // },
-  // {
-  //   name: "badge",
-  //   type: "registry:ui",
-  //   files: ["ui/badge.tsx"],
-  // },
+  {
+    name: "badge",
+    type: "registry:ui",
+    files: ["ui/badge.tsx"],
+  },
   // {
   //   name: "breadcrumb",
   //   type: "registry:ui",
@@ -77,11 +77,11 @@ export const ui: Registry = [
   //   registryDependencies: ["button"],
   //   files: ["ui/calendar.tsx"],
   // },
-  // {
-  //   name: "card",
-  //   type: "registry:ui",
-  //   files: ["ui/card.tsx"],
-  // },
+  {
+    name: "card",
+    type: "registry:ui",
+    files: ["ui/card.tsx"],
+  },
   // {
   //   name: "carousel",
   //   type: "registry:ui",
@@ -108,37 +108,37 @@ export const ui: Registry = [
   //   dependencies: ["@radix-ui/react-collapsible"],
   //   files: ["ui/collapsible.tsx"],
   // },
-  // {
-  //   name: "command",
-  //   type: "registry:ui",
-  //   dependencies: ["cmdk@1.0.0"],
-  //   registryDependencies: ["dialog"],
-  //   files: ["ui/command.tsx"],
-  // },
+  {
+    name: "command",
+    type: "registry:ui",
+    dependencies: ["cmdk@1.0.0"],
+    registryDependencies: ["dialog"],
+    files: ["ui/command.tsx"],
+  },
   // {
   //   name: "context-menu",
   //   type: "registry:ui",
   //   dependencies: ["@radix-ui/react-context-menu"],
   //   files: ["ui/context-menu.tsx"],
   // },
-  // {
-  //   name: "dialog",
-  //   type: "registry:ui",
-  //   dependencies: ["@radix-ui/react-dialog"],
-  //   files: ["ui/dialog.tsx"],
-  // },
+  {
+    name: "dialog",
+    type: "registry:ui",
+    dependencies: ["@radix-ui/react-dialog"],
+    files: ["ui/dialog.tsx"],
+  },
   // {
   //   name: "drawer",
   //   type: "registry:ui",
   //   dependencies: ["vaul", "@radix-ui/react-dialog"],
   //   files: ["ui/drawer.tsx"],
   // },
-  // {
-  //   name: "dropdown-menu",
-  //   type: "registry:ui",
-  //   dependencies: ["@radix-ui/react-dropdown-menu"],
-  //   files: ["ui/dropdown-menu.tsx"],
-  // },
+  {
+    name: "dropdown-menu",
+    type: "registry:ui",
+    dependencies: ["@radix-ui/react-dropdown-menu"],
+    files: ["ui/dropdown-menu.tsx"],
+  },
   // {
   //   name: "form",
   //   type: "registry:ui",
@@ -169,12 +169,12 @@ export const ui: Registry = [
   //   dependencies: ["input-otp"],
   //   files: ["ui/input-otp.tsx"],
   // },
-  // {
-  //   name: "label",
-  //   type: "registry:ui",
-  //   dependencies: ["@radix-ui/react-label"],
-  //   files: ["ui/label.tsx"],
-  // },
+  {
+    name: "label",
+    type: "registry:ui",
+    dependencies: ["@radix-ui/react-label"],
+    files: ["ui/label.tsx"],
+  },
   // {
   //   name: "menubar",
   //   type: "registry:ui",
@@ -193,12 +193,12 @@ export const ui: Registry = [
   //   registryDependencies: ["button"],
   //   files: ["ui/pagination.tsx"],
   // },
-  // {
-  //   name: "popover",
-  //   type: "registry:ui",
-  //   dependencies: ["@radix-ui/react-popover"],
-  //   files: ["ui/popover.tsx"],
-  // },
+  {
+    name: "popover",
+    type: "registry:ui",
+    dependencies: ["@radix-ui/react-popover"],
+    files: ["ui/popover.tsx"],
+  },
   // {
   //   name: "progress",
   //   type: "registry:ui",

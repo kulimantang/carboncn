@@ -13,8 +13,8 @@ export default function PopoverDemo() {
       <PopoverTrigger asChild>
         <Button variant="outline">Open popover</Button>
       </PopoverTrigger>
-      <PopoverContent className="w-80">
-        <div className="grid gap-4">
+      <PopoverContent className="w-80 ">
+        <div className="grid gap-4 p-6 rounded-sm">
           <div className="space-y-2">
             <h4 className="font-medium leading-none">Dimensions</h4>
             <p className="text-sm text-muted-foreground">
