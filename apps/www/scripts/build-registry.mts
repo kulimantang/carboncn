@@ -430,6 +430,7 @@ async function buildStylesIndex() {
       "tailwindcss-animate",
       "class-variance-authority",
       "lucide-react",
+      "@carbon/icons-react",
     ]
 
     // TODO: Remove this when we migrate to lucide-react.

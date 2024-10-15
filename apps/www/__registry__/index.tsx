@@ -27,6 +27,17 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
+    "checkbox": {
+      name: "checkbox",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: ["registry/new-york/ui/checkbox.tsx"],
+      component: React.lazy(() => import("@/registry/new-york/ui/checkbox.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "input": {
       name: "input",
       type: "registry:ui",
@@ -2916,6 +2927,17 @@ export const Index: Record<string, any> = {
       registryDependencies: undefined,
       files: ["registry/default/ui/button.tsx"],
       component: React.lazy(() => import("@/registry/default/ui/button.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "checkbox": {
+      name: "checkbox",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: ["registry/default/ui/checkbox.tsx"],
+      component: React.lazy(() => import("@/registry/default/ui/checkbox.tsx")),
       source: "",
       category: "undefined",
       subcategory: "undefined",

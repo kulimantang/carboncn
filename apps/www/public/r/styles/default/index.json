@@ -4,7 +4,8 @@
   "dependencies": [
     "tailwindcss-animate",
     "class-variance-authority",
-    "lucide-react"
+    "lucide-react",
+    "@carbon/icons-react"
   ],
   "registryDependencies": [
     "utils"
