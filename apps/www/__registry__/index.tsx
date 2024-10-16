@@ -104,6 +104,17 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
+    "form": {
+      name: "form",
+      type: "registry:ui",
+      registryDependencies: ["button","label"],
+      files: ["registry/new-york/ui/form.tsx"],
+      component: React.lazy(() => import("@/registry/new-york/ui/form.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "input": {
       name: "input",
       type: "registry:ui",
@@ -137,12 +148,67 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
+    "radio-group": {
+      name: "radio-group",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: ["registry/new-york/ui/radio-group.tsx"],
+      component: React.lazy(() => import("@/registry/new-york/ui/radio-group.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "separator": {
+      name: "separator",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: ["registry/new-york/ui/separator.tsx"],
+      component: React.lazy(() => import("@/registry/new-york/ui/separator.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "sheet": {
+      name: "sheet",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: ["registry/new-york/ui/sheet.tsx"],
+      component: React.lazy(() => import("@/registry/new-york/ui/sheet.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "skeleton": {
+      name: "skeleton",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: ["registry/new-york/ui/skeleton.tsx"],
+      component: React.lazy(() => import("@/registry/new-york/ui/skeleton.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "tabs": {
       name: "tabs",
       type: "registry:ui",
       registryDependencies: undefined,
       files: ["registry/new-york/ui/tabs.tsx"],
       component: React.lazy(() => import("@/registry/new-york/ui/tabs.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "textarea": {
+      name: "textarea",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: ["registry/new-york/ui/textarea.tsx"],
+      component: React.lazy(() => import("@/registry/new-york/ui/textarea.tsx")),
       source: "",
       category: "undefined",
       subcategory: "undefined",
@@ -3097,6 +3163,17 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
+    "form": {
+      name: "form",
+      type: "registry:ui",
+      registryDependencies: ["button","label"],
+      files: ["registry/default/ui/form.tsx"],
+      component: React.lazy(() => import("@/registry/default/ui/form.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "input": {
       name: "input",
       type: "registry:ui",
@@ -3130,12 +3207,67 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
+    "radio-group": {
+      name: "radio-group",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: ["registry/default/ui/radio-group.tsx"],
+      component: React.lazy(() => import("@/registry/default/ui/radio-group.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "separator": {
+      name: "separator",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: ["registry/default/ui/separator.tsx"],
+      component: React.lazy(() => import("@/registry/default/ui/separator.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "sheet": {
+      name: "sheet",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: ["registry/default/ui/sheet.tsx"],
+      component: React.lazy(() => import("@/registry/default/ui/sheet.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "skeleton": {
+      name: "skeleton",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: ["registry/default/ui/skeleton.tsx"],
+      component: React.lazy(() => import("@/registry/default/ui/skeleton.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "tabs": {
       name: "tabs",
       type: "registry:ui",
       registryDependencies: undefined,
       files: ["registry/default/ui/tabs.tsx"],
       component: React.lazy(() => import("@/registry/default/ui/tabs.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "textarea": {
+      name: "textarea",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: ["registry/default/ui/textarea.tsx"],
+      component: React.lazy(() => import("@/registry/default/ui/textarea.tsx")),
       source: "",
       category: "undefined",
       subcategory: "undefined",

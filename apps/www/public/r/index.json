@@ -147,6 +147,27 @@
     ]
   },
   {
+    "name": "form",
+    "type": "registry:ui",
+    "dependencies": [
+      "@radix-ui/react-label",
+      "@radix-ui/react-slot",
+      "@hookform/resolvers",
+      "zod",
+      "react-hook-form"
+    ],
+    "registryDependencies": [
+      "button",
+      "label"
+    ],
+    "files": [
+      {
+        "path": "ui/form.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  {
     "name": "input",
     "type": "registry:ui",
     "files": [
@@ -183,6 +204,55 @@
     ]
   },
   {
+    "name": "radio-group",
+    "type": "registry:ui",
+    "dependencies": [
+      "@radix-ui/react-radio-group"
+    ],
+    "files": [
+      {
+        "path": "ui/radio-group.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  {
+    "name": "separator",
+    "type": "registry:ui",
+    "dependencies": [
+      "@radix-ui/react-separator"
+    ],
+    "files": [
+      {
+        "path": "ui/separator.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  {
+    "name": "sheet",
+    "type": "registry:ui",
+    "dependencies": [
+      "@radix-ui/react-dialog"
+    ],
+    "files": [
+      {
+        "path": "ui/sheet.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  {
+    "name": "skeleton",
+    "type": "registry:ui",
+    "files": [
+      {
+        "path": "ui/skeleton.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  {
     "name": "tabs",
     "type": "registry:ui",
     "dependencies": [
@@ -191,6 +261,16 @@
     "files": [
       {
         "path": "ui/tabs.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  {
+    "name": "textarea",
+    "type": "registry:ui",
+    "files": [
+      {
+        "path": "ui/textarea.tsx",
         "type": "registry:ui"
       }
     ]

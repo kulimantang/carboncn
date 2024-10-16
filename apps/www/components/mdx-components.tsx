@@ -200,7 +200,7 @@ const components = {
             value={__rawString__}
             src={__src__}
             event={__event__}
-            className={cn("absolute right-4 top-4", __withMeta__ && "top-16")}
+            className={cn("absolute right-4 top-3", __withMeta__ && "top-16")}
           />
         )}
         {__npmCommand__ &&
@@ -214,7 +214,7 @@ const components = {
                 __pnpmCommand__,
                 __bunCommand__,
               }}
-              className={cn("absolute right-4 top-4", __withMeta__ && "top-16")}
+              className={cn("absolute right-4 top-3", __withMeta__ && "top-16")}
             />
           )}
       </StyleWrapper>

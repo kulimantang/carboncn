@@ -139,19 +139,19 @@ export const ui: Registry = [
     dependencies: ["@radix-ui/react-dropdown-menu"],
     files: ["ui/dropdown-menu.tsx"],
   },
-  // {
-  //   name: "form",
-  //   type: "registry:ui",
-  //   dependencies: [
-  //     "@radix-ui/react-label",
-  //     "@radix-ui/react-slot",
-  //     "@hookform/resolvers",
-  //     "zod",
-  //     "react-hook-form",
-  //   ],
-  //   registryDependencies: ["button", "label"],
-  //   files: ["ui/form.tsx"],
-  // },
+  {
+    name: "form",
+    type: "registry:ui",
+    dependencies: [
+      "@radix-ui/react-label",
+      "@radix-ui/react-slot",
+      "@hookform/resolvers",
+      "zod",
+      "react-hook-form",
+    ],
+    registryDependencies: ["button", "label"],
+    files: ["ui/form.tsx"],
+  },
   // {
   //   name: "hover-card",
   //   type: "registry:ui",
@@ -205,12 +205,12 @@ export const ui: Registry = [
   //   dependencies: ["@radix-ui/react-progress"],
   //   files: ["ui/progress.tsx"],
   // },
-  // {
-  //   name: "radio-group",
-  //   type: "registry:ui",
-  //   dependencies: ["@radix-ui/react-radio-group"],
-  //   files: ["ui/radio-group.tsx"],
-  // },
+  {
+    name: "radio-group",
+    type: "registry:ui",
+    dependencies: ["@radix-ui/react-radio-group"],
+    files: ["ui/radio-group.tsx"],
+  },
   // {
   //   name: "resizable",
   //   type: "registry:ui",
@@ -229,23 +229,23 @@ export const ui: Registry = [
   //   dependencies: ["@radix-ui/react-select"],
   //   files: ["ui/select.tsx"],
   // },
-  // {
-  //   name: "separator",
-  //   type: "registry:ui",
-  //   dependencies: ["@radix-ui/react-separator"],
-  //   files: ["ui/separator.tsx"],
-  // },
-  // {
-  //   name: "sheet",
-  //   type: "registry:ui",
-  //   dependencies: ["@radix-ui/react-dialog"],
-  //   files: ["ui/sheet.tsx"],
-  // },
-  // {
-  //   name: "skeleton",
-  //   type: "registry:ui",
-  //   files: ["ui/skeleton.tsx"],
-  // },
+  {
+    name: "separator",
+    type: "registry:ui",
+    dependencies: ["@radix-ui/react-separator"],
+    files: ["ui/separator.tsx"],
+  },
+  {
+    name: "sheet",
+    type: "registry:ui",
+    dependencies: ["@radix-ui/react-dialog"],
+    files: ["ui/sheet.tsx"],
+  },
+  {
+    name: "skeleton",
+    type: "registry:ui",
+    files: ["ui/skeleton.tsx"],
+  },
   // {
   //   name: "slider",
   //   type: "registry:ui",
@@ -275,11 +275,11 @@ export const ui: Registry = [
     dependencies: ["@radix-ui/react-tabs"],
     files: ["ui/tabs.tsx"],
   },
-  // {
-  //   name: "textarea",
-  //   type: "registry:ui",
-  //   files: ["ui/textarea.tsx"],
-  // },
+  {
+    name: "textarea",
+    type: "registry:ui",
+    files: ["ui/textarea.tsx"],
+  },
   // {
   //   name: "toast",
   //   type: "registry:ui",

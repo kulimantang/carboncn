@@ -83,13 +83,16 @@ const DropdownMenuItem = React.forwardRef<
   <DropdownMenuPrimitive.Item
     ref={ref}
     className={cn(
-      "group relative flex cursor-default select-none items-center px-4 text-sm outline-none transition-colors hover:border-b hover:bg-cds-background-hover focus:bg-cds-background-hover focus:text-cds-text-primary data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&:hover+&>div]:border-transparent",
+      "group relative flex cursor-default select-none items-center px-4 text-sm outline-none transition-colors  focus:bg-cds-background-hover focus:text-cds-text-primary data-[disabled]:pointer-events-none data-[disabled]:opacity-50 ", // [&:hover+&>div]:border-transparent hover:bg-cds-background-hover
       inset && "pl-8",
       className
     )}
     {...props}
   >
-    <div className="box-border flex h-full w-full items-center border-t border-solid border-cds-border-subtle-01 py-2.5 group-first:border-t-0 group-hover:border-transparent">
+    <div
+      className="flex h-full w-full items-center py-2.5 "
+      // group-first:border-t-0 group-hover:border-transparent border-t border-solid border-cds-border-subtle-01
+    >
       {children}
     </div>
   </DropdownMenuPrimitive.Item>

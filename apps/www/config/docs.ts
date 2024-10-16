@@ -252,11 +252,11 @@ export const docsConfig: DocsConfig = {
           href: "/docs/components/dropdown-menu",
           items: [],
         },
-        // {
-        //   title: "Form",
-        //   href: "/docs/components/form",
-        //   items: [],
-        // },
+        {
+          title: "Form",
+          href: "/docs/components/form",
+          items: [],
+        },
         // {
         //   title: "Hover Card",
         //   href: "/docs/components/hover-card",
@@ -302,11 +302,11 @@ export const docsConfig: DocsConfig = {
         //   href: "/docs/components/progress",
         //   items: [],
         // },
-        // {
-        //   title: "Radio Group",
-        //   href: "/docs/components/radio-group",
-        //   items: [],
-        // },
+        {
+          title: "Radio Group",
+          href: "/docs/components/radio-group",
+          items: [],
+        },
         // {
         //   title: "Resizable",
         //   href: "/docs/components/resizable",
@@ -322,21 +322,21 @@ export const docsConfig: DocsConfig = {
         //   href: "/docs/components/select",
         //   items: [],
         // },
-        // {
-        //   title: "Separator",
-        //   href: "/docs/components/separator",
-        //   items: [],
-        // },
-        // {
-        //   title: "Sheet",
-        //   href: "/docs/components/sheet",
-        //   items: [],
-        // },
-        // {
-        //   title: "Skeleton",
-        //   href: "/docs/components/skeleton",
-        //   items: [],
-        // },
+        {
+          title: "Separator",
+          href: "/docs/components/separator",
+          items: [],
+        },
+        {
+          title: "Sheet",
+          href: "/docs/components/sheet",
+          items: [],
+        },
+        {
+          title: "Skeleton",
+          href: "/docs/components/skeleton",
+          items: [],
+        },
         // {
         //   title: "Slider",
         //   href: "/docs/components/slider",
@@ -362,11 +362,11 @@ export const docsConfig: DocsConfig = {
           href: "/docs/components/tabs",
           items: [],
         },
-        // {
-        //   title: "Textarea",
-        //   href: "/docs/components/textarea",
-        //   items: [],
-        // },
+        {
+          title: "Textarea",
+          href: "/docs/components/textarea",
+          items: [],
+        },
         // {
         //   title: "Toast",
         //   href: "/docs/components/toast",

@@ -30,7 +30,7 @@ export function SiteHeader() {
                   buttonVariants({
                     variant: "ghost",
                   }),
-                  "h-8 w-8 px-0 !text-white"
+                  "h-8 w-8 px-0 !text-white justify-center"
                 )}
               >
                 <Icons.gitHub className="h-4 w-4" />
