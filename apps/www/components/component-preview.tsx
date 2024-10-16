@@ -51,7 +51,7 @@ export function ComponentPreview({
       return (
         <p className="text-sm text-muted-foreground">
           Component{" "}
-          <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">
+          <code className="relative bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">
             {name}
           </code>{" "}
           not found in registry.
@@ -93,7 +93,7 @@ export function ComponentPreview({
         </div>
         <TabsContent
           value="preview"
-          className="relative rounded-md border bg-cds-background"
+          className="relative border bg-cds-background"
         >
           <div className="flex items-center justify-end p-4">
             {/* <StyleSwitcher /> */}
@@ -141,7 +141,7 @@ export function ComponentPreview({
         </TabsContent>
         <TabsContent value="code">
           <div className="flex flex-col space-y-4">
-            <div className="w-full rounded-md [&_pre]:my-0 [&_pre]:max-h-[350px] [&_pre]:overflow-auto">
+            <div className="w-full [&_pre]:my-0 [&_pre]:max-h-[350px] [&_pre]:overflow-auto">
               {Code}
             </div>
           </div>
