@@ -137,6 +137,17 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
+    "navigation-menu": {
+      name: "navigation-menu",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: ["registry/new-york/ui/navigation-menu.tsx"],
+      component: React.lazy(() => import("@/registry/new-york/ui/navigation-menu.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "popover": {
       name: "popover",
       type: "registry:ui",
@@ -154,6 +165,17 @@ export const Index: Record<string, any> = {
       registryDependencies: undefined,
       files: ["registry/new-york/ui/radio-group.tsx"],
       component: React.lazy(() => import("@/registry/new-york/ui/radio-group.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "select": {
+      name: "select",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: ["registry/new-york/ui/select.tsx"],
+      component: React.lazy(() => import("@/registry/new-york/ui/select.tsx")),
       source: "",
       category: "undefined",
       subcategory: "undefined",
@@ -209,6 +231,17 @@ export const Index: Record<string, any> = {
       registryDependencies: undefined,
       files: ["registry/new-york/ui/textarea.tsx"],
       component: React.lazy(() => import("@/registry/new-york/ui/textarea.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "tooltip": {
+      name: "tooltip",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: ["registry/new-york/ui/tooltip.tsx"],
+      component: React.lazy(() => import("@/registry/new-york/ui/tooltip.tsx")),
       source: "",
       category: "undefined",
       subcategory: "undefined",
@@ -3196,6 +3229,17 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
+    "navigation-menu": {
+      name: "navigation-menu",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: ["registry/default/ui/navigation-menu.tsx"],
+      component: React.lazy(() => import("@/registry/default/ui/navigation-menu.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "popover": {
       name: "popover",
       type: "registry:ui",
@@ -3213,6 +3257,17 @@ export const Index: Record<string, any> = {
       registryDependencies: undefined,
       files: ["registry/default/ui/radio-group.tsx"],
       component: React.lazy(() => import("@/registry/default/ui/radio-group.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "select": {
+      name: "select",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: ["registry/default/ui/select.tsx"],
+      component: React.lazy(() => import("@/registry/default/ui/select.tsx")),
       source: "",
       category: "undefined",
       subcategory: "undefined",
@@ -3268,6 +3323,17 @@ export const Index: Record<string, any> = {
       registryDependencies: undefined,
       files: ["registry/default/ui/textarea.tsx"],
       component: React.lazy(() => import("@/registry/default/ui/textarea.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "tooltip": {
+      name: "tooltip",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: ["registry/default/ui/tooltip.tsx"],
+      component: React.lazy(() => import("@/registry/default/ui/tooltip.tsx")),
       source: "",
       category: "undefined",
       subcategory: "undefined",

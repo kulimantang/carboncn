@@ -1,11 +1,11 @@
 export const siteConfig = {
   name: "carboncn",
-  url: "https://ui.shadcn.com",
-  ogImage: "https://ui.shadcn.com/og.jpg",
+  url: "https://carboncn.dev",
+  ogImage: "https://carboncn.dev/og.png",
   description:
-    "Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.",
+    "Carbon styled components that you can copy and paste into your apps and have full access to. 100% compatible with Tailwind CSS. 100% compatible with the original Carbon Components",
   links: {
-    twitter: "https://twitter.com/shadcn",
+    twitter: "",
     github: "https://github.com/kulimantang/carboncn",
     creator: "https://github.com/kulimantang",
   },

@@ -191,6 +191,19 @@
     ]
   },
   {
+    "name": "navigation-menu",
+    "type": "registry:ui",
+    "dependencies": [
+      "@radix-ui/react-navigation-menu"
+    ],
+    "files": [
+      {
+        "path": "ui/navigation-menu.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  {
     "name": "popover",
     "type": "registry:ui",
     "dependencies": [
@@ -212,6 +225,19 @@
     "files": [
       {
         "path": "ui/radio-group.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  {
+    "name": "select",
+    "type": "registry:ui",
+    "dependencies": [
+      "@radix-ui/react-select"
+    ],
+    "files": [
+      {
+        "path": "ui/select.tsx",
         "type": "registry:ui"
       }
     ]
@@ -271,6 +297,19 @@
     "files": [
       {
         "path": "ui/textarea.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  {
+    "name": "tooltip",
+    "type": "registry:ui",
+    "dependencies": [
+      "@radix-ui/react-tooltip"
+    ],
+    "files": [
+      {
+        "path": "ui/tooltip.tsx",
         "type": "registry:ui"
       }
     ]
