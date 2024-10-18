@@ -22,7 +22,7 @@ export function MailList({ items }: MailListProps) {
           <button
             key={item.id}
             className={cn(
-              "flex flex-col bg-cds-field items-start gap-2 rounded-lg border border-transparent p-3 text-left text-sm transition-all hover:bg-cds-field-hover",
+              "flex flex-col bg-cds-field items-start gap-2 border border-transparent p-3 text-left text-sm transition-all hover:bg-cds-field-hover",
               mail.selected === item.id &&
                 "bg-cds-field-hover border-cds-button-primary"
             )}

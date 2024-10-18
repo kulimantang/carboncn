@@ -45,7 +45,7 @@ export default function IndexPage() {
         </PageActions>
       </PageHeader>
       <ExamplesNav className="[&>a:first-child]:text-primary" />
-      <section className="overflow-hidden rounded-lg border bg-background shadow-md md:hidden md:shadow-xl">
+      <section className="overflow-hidden border bg-background shadow-md md:hidden md:shadow-xl">
         <Image
           src="/examples/mail-dark.png"
           width={1280}
@@ -62,7 +62,7 @@ export default function IndexPage() {
         />
       </section>
       <section className="hidden md:block">
-        <div className="overflow-hidden rounded-lg border bg-background shadow">
+        <div className="overflow-hidden border bg-background shadow">
           <MailPage />
         </div>
       </section>

@@ -282,11 +282,11 @@ export const docsConfig: DocsConfig = {
         //   href: "/docs/components/menubar",
         //   items: [],
         // },
-        // {
-        //   title: "Navigation Menu",
-        //   href: "/docs/components/navigation-menu",
-        //   items: [],
-        // },
+        {
+          title: "Navigation Menu",
+          href: "/docs/components/navigation-menu",
+          items: [],
+        },
         // {
         //   title: "Pagination",
         //   href: "/docs/components/pagination",
@@ -317,11 +317,11 @@ export const docsConfig: DocsConfig = {
         //   href: "/docs/components/scroll-area",
         //   items: [],
         // },
-        // {
-        //   title: "Select",
-        //   href: "/docs/components/select",
-        //   items: [],
-        // },
+        {
+          title: "Select",
+          href: "/docs/components/select",
+          items: [],
+        },
         {
           title: "Separator",
           href: "/docs/components/separator",
@@ -382,11 +382,11 @@ export const docsConfig: DocsConfig = {
         //   href: "/docs/components/toggle-group",
         //   items: [],
         // },
-        // {
-        //   title: "Tooltip",
-        //   href: "/docs/components/tooltip",
-        //   items: [],
-        // },
+        {
+          title: "Tooltip",
+          href: "/docs/components/tooltip",
+          items: [],
+        },
       ],
     },
   ],

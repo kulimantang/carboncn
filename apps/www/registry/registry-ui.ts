@@ -181,12 +181,12 @@ export const ui: Registry = [
   //   dependencies: ["@radix-ui/react-menubar"],
   //   files: ["ui/menubar.tsx"],
   // },
-  // {
-  //   name: "navigation-menu",
-  //   type: "registry:ui",
-  //   dependencies: ["@radix-ui/react-navigation-menu"],
-  //   files: ["ui/navigation-menu.tsx"],
-  // },
+  {
+    name: "navigation-menu",
+    type: "registry:ui",
+    dependencies: ["@radix-ui/react-navigation-menu"],
+    files: ["ui/navigation-menu.tsx"],
+  },
   // {
   //   name: "pagination",
   //   type: "registry:ui",
@@ -223,12 +223,12 @@ export const ui: Registry = [
   //   dependencies: ["@radix-ui/react-scroll-area"],
   //   files: ["ui/scroll-area.tsx"],
   // },
-  // {
-  //   name: "select",
-  //   type: "registry:ui",
-  //   dependencies: ["@radix-ui/react-select"],
-  //   files: ["ui/select.tsx"],
-  // },
+  {
+    name: "select",
+    type: "registry:ui",
+    dependencies: ["@radix-ui/react-select"],
+    files: ["ui/select.tsx"],
+  },
   {
     name: "separator",
     type: "registry:ui",
@@ -312,10 +312,10 @@ export const ui: Registry = [
   //   registryDependencies: ["toggle"],
   //   files: ["ui/toggle-group.tsx"],
   // },
-  // {
-  //   name: "tooltip",
-  //   type: "registry:ui",
-  //   dependencies: ["@radix-ui/react-tooltip"],
-  //   files: ["ui/tooltip.tsx"],
-  // },
+  {
+    name: "tooltip",
+    type: "registry:ui",
+    dependencies: ["@radix-ui/react-tooltip"],
+    files: ["ui/tooltip.tsx"],
+  },
 ]
