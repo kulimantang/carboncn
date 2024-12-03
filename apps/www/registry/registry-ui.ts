@@ -199,12 +199,12 @@ export const ui: Registry = [
     dependencies: ["@radix-ui/react-popover"],
     files: ["ui/popover.tsx"],
   },
-  // {
-  //   name: "progress",
-  //   type: "registry:ui",
-  //   dependencies: ["@radix-ui/react-progress"],
-  //   files: ["ui/progress.tsx"],
-  // },
+  {
+    name: "progress",
+    type: "registry:ui",
+    dependencies: ["@radix-ui/react-progress"],
+    files: ["ui/progress.tsx"],
+  },
   {
     name: "radio-group",
     type: "registry:ui",
@@ -246,24 +246,24 @@ export const ui: Registry = [
     type: "registry:ui",
     files: ["ui/skeleton.tsx"],
   },
-  // {
-  //   name: "slider",
-  //   type: "registry:ui",
-  //   dependencies: ["@radix-ui/react-slider"],
-  //   files: ["ui/slider.tsx"],
-  // },
+  {
+    name: "slider",
+    type: "registry:ui",
+    dependencies: ["@radix-ui/react-slider"],
+    files: ["ui/slider.tsx"],
+  },
   // {
   //   name: "sonner",
   //   type: "registry:ui",
   //   dependencies: ["sonner", "next-themes"],
   //   files: ["ui/sonner.tsx"],
   // },
-  // {
-  //   name: "switch",
-  //   type: "registry:ui",
-  //   dependencies: ["@radix-ui/react-switch"],
-  //   files: ["ui/switch.tsx"],
-  // },
+  {
+    name: "switch",
+    type: "registry:ui",
+    dependencies: ["@radix-ui/react-switch"],
+    files: ["ui/switch.tsx"],
+  },
   // {
   //   name: "table",
   //   type: "registry:ui",

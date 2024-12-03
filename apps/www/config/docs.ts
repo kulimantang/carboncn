@@ -297,11 +297,11 @@ export const docsConfig: DocsConfig = {
           href: "/docs/components/popover",
           items: [],
         },
-        // {
-        //   title: "Progress",
-        //   href: "/docs/components/progress",
-        //   items: [],
-        // },
+        {
+          title: "Progress",
+          href: "/docs/components/progress",
+          items: [],
+        },
         {
           title: "Radio Group",
           href: "/docs/components/radio-group",
@@ -337,21 +337,21 @@ export const docsConfig: DocsConfig = {
           href: "/docs/components/skeleton",
           items: [],
         },
-        // {
-        //   title: "Slider",
-        //   href: "/docs/components/slider",
-        //   items: [],
-        // },
+        {
+          title: "Slider",
+          href: "/docs/components/slider",
+          items: [],
+        },
         // {
         //   title: "Sonner",
         //   href: "/docs/components/sonner",
         //   items: [],
         // },
-        // {
-        //   title: "Switch",
-        //   href: "/docs/components/switch",
-        //   items: [],
-        // },
+        {
+          title: "Switch",
+          href: "/docs/components/switch",
+          items: [],
+        },
         // {
         //   title: "Table",
         //   href: "/docs/components/table",

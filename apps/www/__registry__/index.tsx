@@ -159,6 +159,17 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
+    "progress": {
+      name: "progress",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: ["registry/new-york/ui/progress.tsx"],
+      component: React.lazy(() => import("@/registry/new-york/ui/progress.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "radio-group": {
       name: "radio-group",
       type: "registry:ui",
@@ -209,6 +220,28 @@ export const Index: Record<string, any> = {
       registryDependencies: undefined,
       files: ["registry/new-york/ui/skeleton.tsx"],
       component: React.lazy(() => import("@/registry/new-york/ui/skeleton.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "slider": {
+      name: "slider",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: ["registry/new-york/ui/slider.tsx"],
+      component: React.lazy(() => import("@/registry/new-york/ui/slider.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "switch": {
+      name: "switch",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: ["registry/new-york/ui/switch.tsx"],
+      component: React.lazy(() => import("@/registry/new-york/ui/switch.tsx")),
       source: "",
       category: "undefined",
       subcategory: "undefined",
@@ -3251,6 +3284,17 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
+    "progress": {
+      name: "progress",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: ["registry/default/ui/progress.tsx"],
+      component: React.lazy(() => import("@/registry/default/ui/progress.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "radio-group": {
       name: "radio-group",
       type: "registry:ui",
@@ -3301,6 +3345,28 @@ export const Index: Record<string, any> = {
       registryDependencies: undefined,
       files: ["registry/default/ui/skeleton.tsx"],
       component: React.lazy(() => import("@/registry/default/ui/skeleton.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "slider": {
+      name: "slider",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: ["registry/default/ui/slider.tsx"],
+      component: React.lazy(() => import("@/registry/default/ui/slider.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "switch": {
+      name: "switch",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: ["registry/default/ui/switch.tsx"],
+      component: React.lazy(() => import("@/registry/default/ui/switch.tsx")),
       source: "",
       category: "undefined",
       subcategory: "undefined",
